@@ -1,0 +1,770 @@
+Script started on 2026-09-19 05:28:47+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="135" LINES="38"]
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment[00m$ [7m./scenario.sh up[27m./scenario.sh up
+[?2004lbash: ./scenario.sh: No such file or directory
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment[00m$ cd lab/
+[?2004l[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ cd lab/./scenario.sh up
+[?2004l==> applying cluster environment (cluster-state/)
+namespace/debug-lab created
+Error from server (NotFound): error when creating "cluster-state/limits.yaml": namespaces "debug-lab" not found
+==> installing the broken chart
+Release "debug-lab" does not exist. Installing it now.
+Error: 1 error occurred:
+	* Job.batch "migrate" is invalid: spec.template.spec.restartPolicy: Required value: valid values: "OnFailure", "Never"
+
+
+
+[2mhelm reported an error. That is not your machine misbehaving —[0m
+[2mit is part of the exercise. Read the error; it is evidence.[0m
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh up[K[Kverify
+[?2004l==> verifying goal state in namespace debug-lab
+  [31mFAIL[0m  migrate Job has not completed (does it exist? did the chart even install cleanly?)
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [32mPASS[0m  no pods in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m10 check(s) failing[0m, 1 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh verify[4Pup
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails created
+namespace/debug-lab unchanged
+==> installing the broken chart
+Release "debug-lab" has been upgraded. Happy Helming!
+NAME: debug-lab
+LAST DEPLOYED: Sat Sep 19 05:35:04 2026
+NAMESPACE: debug-lab
+STATUS: deployed
+REVISION: 2
+TEST SUITE: None
+NOTES:
+debug-lab installed into namespace debug-lab.
+
+Goal state:
+  * migrate Job: Completed
+  * backend, gateway, worker, reporter, metrics: all pods Running and 1/1 Ready
+  * gateway /status reports {"self":"ok","backend":"ok",...}
+
+Check your progress at any time:
+  ./scenario.sh verify
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh upverify
+[?2004l==> verifying goal state in namespace debug-lab
+  [31mFAIL[0m  migrate Job has not completed (does it exist? did the chart even install cleanly?)
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [32mPASS[0m  no pods in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m10 check(s) failing[0m, 1 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get [K[K[K[K[K[K[K[K[K[K[K[K[7mkubectl get pods -n debug-lab -o wide[27mkubectl get pods -n debug-lab -o wide
+[?2004lNAME                        READY   STATUS                       RESTARTS   AGE     IP            NODE                          NOMINATED NODE   READINESS GATES
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0          8m47s   10.244.0.14   enterprisebot-control-plane   <none>           <none>
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0          8m47s   10.244.0.10   enterprisebot-control-plane   <none>           <none>
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0          8m47s   10.244.0.11   enterprisebot-control-plane   <none>           <none>
+migrate-lk8w9               0/1     CreateContainerConfigError   0          3m41s   10.244.0.16   enterprisebot-control-plane   <none>           <none>
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0          8m47s   10.244.0.12   enterprisebot-control-plane   <none>           <none>
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0          8m47s   10.244.0.13   enterprisebot-control-plane   <none>           <none>
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [K]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get jobs -n debug-lab[27mkubectl get jobs -n debug-lab
+[?2004lNAME      STATUS    COMPLETIONS   DURATION   AGE
+migrate   Running   0/1           4m9s       4m9s
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get events -n debug-lab --sort-by=.lastTimestamp[27mkubectl get events -n debug-lab --sort-by=.lastTimestamp
+[?2004lLAST SEEN   TYPE      REASON              OBJECT                           MESSAGE
+10m         Normal    Scheduled           pod/backend-7948fd6b4b-5d47f     Successfully assigned debug-lab/backend-7948fd6b4b-5d47f to enterprisebot-control-plane
+10m         Normal    Scheduled           pod/gateway-5cbdcd4bf8-782g4     Successfully assigned debug-lab/gateway-5cbdcd4bf8-782g4 to enterprisebot-control-plane
+10m         Normal    ScalingReplicaSet   deployment/worker                Scaled up replica set worker-5fcd6b9b6b from 0 to 1
+10m         Normal    SuccessfulCreate    replicaset/worker-5fcd6b9b6b     Created pod: worker-5fcd6b9b6b-ns6zz
+10m         Normal    SuccessfulCreate    replicaset/gateway-5cbdcd4bf8    Created pod: gateway-5cbdcd4bf8-782g4
+10m         Normal    SuccessfulCreate    replicaset/backend-7948fd6b4b    Created pod: backend-7948fd6b4b-5d47f
+10m         Normal    ScalingReplicaSet   deployment/backend               Scaled up replica set backend-7948fd6b4b from 0 to 1
+10m         Normal    Scheduled           pod/worker-5fcd6b9b6b-ns6zz      Successfully assigned debug-lab/worker-5fcd6b9b6b-ns6zz to enterprisebot-control-plane
+10m         Normal    ScalingReplicaSet   deployment/reporter              Scaled up replica set reporter-6f8bff6b8d from 0 to 1
+10m         Normal    Scheduled           pod/reporter-6f8bff6b8d-frnkt    Successfully assigned debug-lab/reporter-6f8bff6b8d-frnkt to enterprisebot-control-plane
+10m         Normal    Scheduled           pod/metrics-547dccf75-wwckt      Successfully assigned debug-lab/metrics-547dccf75-wwckt to enterprisebot-control-plane
+10m         Normal    Pulling             pod/metrics-547dccf75-wwckt      Pulling image "docker.io/ebinterview/eb-debug-app:1.0.1"
+10m         Normal    SuccessfulCreate    replicaset/reporter-6f8bff6b8d   Created pod: reporter-6f8bff6b8d-frnkt
+10m         Normal    ScalingReplicaSet   deployment/metrics               Scaled up replica set metrics-547dccf75 from 0 to 1
+10m         Normal    SuccessfulCreate    replicaset/metrics-547dccf75     Created pod: metrics-547dccf75-wwckt
+10m         Normal    Pulling             pod/gateway-5cbdcd4bf8-782g4     Pulling image "docker.io/ebinterview/eb-debug-app:1.0.1"
+10m         Normal    ScalingReplicaSet   deployment/gateway               Scaled up replica set gateway-5cbdcd4bf8 from 0 to 1
+10m         Normal    Pulling             pod/reporter-6f8bff6b8d-frnkt    Pulling image "docker.io/ebinterview/eb-debug-app:1.0.1"
+10m         Normal    Pulling             pod/backend-7948fd6b4b-5d47f     Pulling image "docker.io/ebinterview/eb-debug-app:1.0.1"
+10m         Normal    Pulling             pod/worker-5fcd6b9b6b-ns6zz      Pulling image "docker.io/ebinterview/eb-debug-app:1.0.1"
+9m52s       Normal    Pulled              pod/gateway-5cbdcd4bf8-782g4     Successfully pulled image "docker.io/ebinterview/eb-debug-app:1.0.1" in 16.79s (16.791s including waiting). Image size: 3279587 bytes.
+9m50s       Normal    Pulled              pod/metrics-547dccf75-wwckt      Successfully pulled image "docker.io/ebinterview/eb-debug-app:1.0.1" in 2.326s (19.048s including waiting). Image size: 3279587 bytes.
+9m47s       Normal    Pulled              pod/reporter-6f8bff6b8d-frnkt    Successfully pulled image "docker.io/ebinterview/eb-debug-app:1.0.1" in 2.641s (21.595s including waiting). Image size: 3279587 bytes.
+9m44s       Normal    Pulled              pod/worker-5fcd6b9b6b-ns6zz      Successfully pulled image "docker.io/ebinterview/eb-debug-app:1.0.1" in 2.577s (24.095s including waiting). Image size: 3279587 bytes.
+9m42s       Normal    Pulled              pod/backend-7948fd6b4b-5d47f     Successfully pulled image "docker.io/ebinterview/eb-debug-app:1.0.1" in 2.782s (26.758s including waiting). Image size: 3279587 bytes.
+9m33s       Normal    Pulling             pod/eb-verify-probe              Pulling image "busybox:1.36"
+9m33s       Normal    Scheduled           pod/eb-verify-probe              Successfully assigned debug-lab/eb-verify-probe to enterprisebot-control-plane
+9m25s       Normal    Started             pod/eb-verify-probe              Container started
+9m25s       Normal    Created             pod/eb-verify-probe              Container created
+9m25s       Normal    Pulled              pod/eb-verify-probe              Successfully pulled image "busybox:1.36" in 8.152s (8.152s including waiting). Image size: 2217006 bytes.
+5m3s        Normal    Scheduled           pod/migrate-lk8w9                Successfully assigned debug-lab/migrate-lk8w9 to enterprisebot-control-plane
+5m3s        Normal    SuccessfulCreate    job/migrate                      Created pod: migrate-lk8w9
+4m42s       Warning   Failed              pod/gateway-5cbdcd4bf8-782g4     Error: container has runAsNonRoot and image has non-numeric user (nonroot), cannot verify user is non-root (pod: "gateway-5cbdcd4bf8-782g4_debug-lab(97147049-7baa-4777-9cda-3473faceeb7b)", container: gateway)
+4m38s       Normal    Pulled              pod/metrics-547dccf75-wwckt      Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+4m37s       Warning   Failed              pod/worker-5fcd6b9b6b-ns6zz      Error: container has runAsNonRoot and image has non-numeric user (nonroot), cannot verify user is non-root (pod: "worker-5fcd6b9b6b-ns6zz_debug-lab(00d3a589-785d-4315-aa3e-dc57689fbc88)", container: worker)
+4m36s       Normal    Scheduled           pod/eb-verify-probe              Successfully assigned debug-lab/eb-verify-probe to enterprisebot-control-plane
+4m35s       Normal    Started             pod/eb-verify-probe              Container started
+4m35s       Normal    Created             pod/eb-verify-probe              Container created
+4m35s       Normal    Pulled              pod/eb-verify-probe              Container image "busybox:1.36" already present on machine and can be accessed by the pod
+4m33s       Warning   Failed              pod/reporter-6f8bff6b8d-frnkt    Error: container has runAsNonRoot and image has non-numeric user (nonroot), cannot verify user is non-root (pod: "reporter-6f8bff6b8d-frnkt_debug-lab(c951f256-318a-44ca-b19b-2dba95292c16)", container: reporter)
+4m27s       Warning   Failed              pod/backend-7948fd6b4b-5d47f     Error: container has runAsNonRoot and image has non-numeric user (nonroot), cannot verify user is non-root (pod: "backend-7948fd6b4b-5d47f_debug-lab(c18f5a9f-2c96-4293-b8ca-bc492a3845b2)", container: backend)
+4m26s       Warning   Failed              pod/metrics-547dccf75-wwckt      Error: container has runAsNonRoot and image has non-numeric user (nonroot), cannot verify user is non-root (pod: "metrics-547dccf75-wwckt_debug-lab(67397f34-3be5-43fc-94b7-478bff8559a8)", container: metrics)
+14s         Warning   Failed              pod/migrate-lk8w9                Error: container has runAsNonRoot and image has non-numeric user (nonroot), cannot verify user is non-root (pod: "migrate-lk8w9_debug-lab(c1b1932e-350e-4e86-bd54-c746e25eb645)", container: migrate)
+14s         Normal    Pulled              pod/migrate-lk8w9                Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+8s          Normal    Pulled              pod/gateway-5cbdcd4bf8-782g4     Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+8s          Normal    Pulled              pod/worker-5fcd6b9b6b-ns6zz      Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+2s          Normal    Pulled              pod/backend-7948fd6b4b-5d47f     Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+1s          Normal    Pulled              pod/reporter-6f8bff6b8d-frnkt    Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get deployments -n debug-lab -o yaml | Select-String -Pattern "security[27m[7mC[27m[7montext|runAsUser|runAsGroup|runAsNonRoot" -Context 3,5[27m[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get deployments -n debug-lab -o yaml | Select-String -Pattern "securityContext|runAsUser|runAsGroup|runAsNonRoot" -Context 3,5
+[?2004lSelect-String: command not found
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker run --rm --entrypoint id docker.io/ebinterview/eb-debug-app:1.0.1[27mdocker run --rm --entrypoint id docker.io/ebinterview/eb-debug-app:1.0.1
+[?2004ldocker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "id": executable file not found in $PATH
+
+Run 'docker run --help' for more information
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker run --rm --entrypoint /bin/sh docker.io/ebinterview/eb-debug-app:1.0.1 -[27m[7mc[27m[7m 'id'[27m[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ docker run --rm --entrypoint /bin/sh docker.io/ebinterview/eb-debug-app:1.0.1 -c 'id'
+[?2004ldocker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: "/bin/sh": stat /bin/sh: no such file or directory
+
+Run 'docker run --help' for more information
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker image inspect docker.io/ebinterview/eb-debug-app:1.0.1[27mdocker image inspect docker.io/ebinterview/eb-debug-app:1.0.1
+[?2004l[
+    {
+        "Id": "sha256:17f41698c10f5c18693339281b92d3cfef16d9fcffcad440a24e7ab19e05c443",
+        "RepoTags": [
+            "ebinterview/eb-debug-app:1.0.1"
+        ],
+        "RepoDigests": [
+            "ebinterview/eb-debug-app@sha256:17f41698c10f5c18693339281b92d3cfef16d9fcffcad440a24e7ab19e05c443"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-07-31T08:41:50.864288199Z",
+        "Config": {
+            "User": "nonroot",
+            "ExposedPorts": {
+                "8081/tcp": {}
+            },
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+            ],
+            "Entrypoint": [
+                "/eb-debug-app"
+            ],
+            "WorkingDir": "/home/nonroot"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 14543587,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:7223ea1323e8c1159ec17f07d35acc27bdd1cc2bc3ed425b44ef21dac9915db0",
+                "sha256:8fa10c0194df9b7c054c90dbe482585f768a54428fc90a5b78a0066a123b1bba",
+                "sha256:35b5ba6e08cdd034b8d1920f9c7203e5d66f258e1915f164a01de0af14f34710",
+                "sha256:114dde0fefebbca13165d0da9c500a66190e497a82a53dcaabc3172d630be1e9",
+                "sha256:4d049f83d9cf21d1f5cc0e11deaf36df02790d0e60c1a3829538fb4b61685368",
+                "sha256:af5aa97ebe6ce1604747ec1e21af7136ded391bcabe4acef882e718a87c86bcc",
+                "sha256:6f1cdceb6a3146f0ccb986521156bef8a422cdbb0863396f7f751f575ba308f4",
+                "sha256:bd3cdfae1d3fdd83a2231d608969b38b82349777c2fff9a7c12d54f8ac5c9b38",
+                "sha256:4cde6b0bb6f50a5f255eef7b2a42162c661cf776b803225dcac9a659e396bb6b",
+                "sha256:ad51d0769d16ba578106a177987dfe3d2e02c1668c852b795b2f6b024068242a",
+                "sha256:6e7fbcf090d09b73a4aa85f9dce690d0ace73877c150b7c56955487b6e7a822a",
+                "sha256:33b37ab0b0901175c2699d81c10b0c887f0dff944de74763cca00c155904d6fb",
+                "sha256:2d8ca010f9fd47a90f2dba9ebf85a4b3dd7983cd6b6605a0f1d5d7eac7131522"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-19T05:42:38.254893636Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:17f41698c10f5c18693339281b92d3cfef16d9fcffcad440a24e7ab19e05c443",
+            "size": 3022
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/ebinterview/eb-debug-app"
+                }
+            ]
+        }
+    }
+]
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker history --no-trunc docker.io/ebinterview/eb-debug-app:1.0.1[27mdocker history --no-trunc docker.io/ebinterview/eb-debug-app:1.0.1
+[?2004lIMAGE                                                                     CREATED       CREATED BY                                              SIZE      COMMENT
+sha256:17f41698c10f5c18693339281b92d3cfef16d9fcffcad440a24e7ab19e05c443   7 weeks ago   ENTRYPOINT ["/eb-debug-app"]                            0B        buildkit.dockerfile.v0
+<missing>                                                                 7 weeks ago   USER nonroot                                            0B        buildkit.dockerfile.v0
+<missing>                                                                 7 weeks ago   EXPOSE [8081/tcp]                                       0B        buildkit.dockerfile.v0
+<missing>                                                                 7 weeks ago   COPY /eb-debug-app /eb-debug-app # buildkit             5.86MB    buildkit.dockerfile.v0
+<missing>                                                                 N/A           bazel build //common:cacerts_debian12_amd64             270kB     
+<missing>                                                                 N/A           bazel build //common:os_release_debian12                16.4kB    
+<missing>                                                                 N/A           bazel build //static:nsswitch                           12.3kB    
+<missing>                                                                 N/A           bazel build //common:tmp                                8.19kB    
+<missing>                                                                 N/A           bazel build //common:group                              12.3kB    
+<missing>                                                                 N/A           bazel build //common:home                               16.4kB    
+<missing>                                                                 N/A           bazel build //common:passwd                             12.3kB    
+<missing>                                                                 N/A           bazel build //common:rootfs                             4.1kB     
+<missing>                                                                 N/A           bazel build @bookworm//media-types/amd64:data_statusd   152kB     
+<missing>                                                                 N/A           bazel build @bookworm//tzdata/amd64:data_statusd        4.24MB    
+<missing>                                                                 N/A           bazel build @bookworm//netbase/amd64:data_statusd       86kB      
+<missing>                                                                 N/A           bazel build @bookworm//base-files/amd64:data_statusd    582kB     
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker create --name inspect-eb docker.io/ebinterview/eb-debug-app:1.0.1[27mdocker create --name inspect-eb docker.io/ebinterview/eb-debug-app:1.0.1
+[?2004lb8f70173da2765a3e977138c625ef0381bb0b3ea6fd629c85b09e5ddcf6f338e
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker export inspect-eb -o /tmp/eb-image.tar[27mdocker export inspect-eb -o /tmp/eb-image.tar
+[?2004l[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mdocker rm inspect-eb[27m
+[7mtar -xOf /tmp/eb-image.tar etc/passwd[27m[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ docker rm inspect-eb
+tar -xOf /tmp/eb-image.tar etc/passwd
+[?2004linspect-eb
+root:x:0:0:root:/root:/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/sbin/nologin
+nonroot:x:65532:65532:nonroot:/home/nonroot:/sbin/nologin
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ tar -xOf /tmp/eb-image.tar etc/passwd[17Pdocker rm inspect-ebexport inspect-eb -o /tmp/eb-image.tarcreate --name inspect-eb docker.io/ebinterview/eb-debug-app:1.0.1[6Phistory --no-trunc[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pimage inspect[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun --rm --entrypoint /bin/sh docker.io/ebinterview/eb-debug-app:1.0.1 -c 'id'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pid docker.io/ebinterview/eb-debug-app:1.0.1
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl get deployments -n debug-lab -o yaml | Select-String -Pattern "securityContext|runAsUser|runAsGroup|runAsNonRoot" -Context 3,5[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[23Pevents -n debug-lab --sort-by=.lastTimestamp
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pjobs -n debug-labpods -n debug-lab -o wide[17P./scenario.sh verify[4Pup[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgrep -Rni "runAsNonRoot" broken-chart/[27mgrep -Rni "runAsNonRoot" broken-chart/
+[?2004l[35m[Kbroken-chart/templates/backend.yaml[m[K[36m[K:[m[K[32m[K39[m[K[36m[K:[m[K            [01;31m[KrunAsNonRoot[m[K: true
+[35m[Kbroken-chart/templates/gateway.yaml[m[K[36m[K:[m[K[32m[K39[m[K[36m[K:[m[K            [01;31m[KrunAsNonRoot[m[K: true
+[35m[Kbroken-chart/templates/metrics.yaml[m[K[36m[K:[m[K[32m[K39[m[K[36m[K:[m[K            [01;31m[KrunAsNonRoot[m[K: true
+[35m[Kbroken-chart/templates/migrate-job.yaml[m[K[36m[K:[m[K[32m[K29[m[K[36m[K:[m[K            [01;31m[KrunAsNonRoot[m[K: true
+[35m[Kbroken-chart/templates/reporter.yaml[m[K[36m[K:[m[K[32m[K44[m[K[36m[K:[m[K            [01;31m[KrunAsNonRoot[m[K: true
+[35m[Kbroken-chart/templates/worker.yaml[m[K[36m[K:[m[K[32m[K39[m[K[36m[K:[m[K            [01;31m[KrunAsNonRoot[m[K: true
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7m./scenario.sh up[27m./scenario.sh up
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails unchanged
+namespace/debug-lab unchanged
+==> installing the broken chart
+Error: UPGRADE FAILED: cannot patch "migrate" with kind Job: Job.batch "migrate" is invalid: spec.template: Invalid value: {"labels":{"app":"migrate","batch.kubernetes.io/controller-uid":"d090976d-ebe9-48a5-8a11-d77179164974","batch.kubernetes.io/job-name":"migrate","controller-uid":"d090976d-ebe9-48a5-8a11-d77179164974","job-name":"migrate"},"Spec":{"Volumes":null,"InitContainers":null,"Containers":[{"Name":"migrate","Image":"docker.io/ebinterview/eb-debug-app:1.0.1","Command":null,"Args":null,"WorkingDir":"","Ports":null,"EnvFrom":null,"Env":[{"Name":"APP_MODE","Value":"migrate","ValueFrom":null},{"Name":"APP_NAME","Value":"migrate","ValueFrom":null},{"Name":"VERSION","Value":"2.0.0","ValueFrom":null}],"Resources":{"Limits":{"cpu":"200m","memory":"128Mi"},"Requests":{"cpu":"50m","memory":"64Mi"},"Claims":null},"ResizePolicy":null,"RestartPolicy":null,"RestartPolicyRules":null,"VolumeMounts":null,"VolumeDevices":null,"LivenessProbe":null,"ReadinessProbe":null,"StartupProbe":null,"Lifecycle":null,"TerminationMessagePath":"/dev/termination-log","TerminationMessagePolicy":"File","ImagePullPolicy":"IfNotPresent","SecurityContext":{"Capabilities":{"Add":null,"Drop":["ALL"]},"Privileged":null,"SELinuxOptions":null,"WindowsOptions":null,"RunAsUser":65532,"RunAsGroup":null,"RunAsNonRoot":true,"ReadOnlyRootFilesystem":true,"AllowPrivilegeEscalation":false,"ProcMount":null,"SeccompProfile":null,"AppArmorProfile":null},"Stdin":false,"StdinOnce":false,"TTY":false}],"EphemeralContainers":null,"RestartPolicy":"Never","TerminationGracePeriodSeconds":30,"ActiveDeadlineSeconds":null,"DNSPolicy":"ClusterFirst","NodeSelector":null,"ServiceAccountName":"","DeprecatedServiceAccount":"","AutomountServiceAccountToken":null,"NodeName":"","HostNetwork":false,"HostPID":false,"HostIPC":false,"ShareProcessNamespace":null,"SecurityContext":{"SELinuxOptions":null,"WindowsOptions":null,"RunAsUser":null,"RunAsGroup":null,"RunAsNonRoot":null,"SupplementalGroups":null,"SupplementalGroupsPolicy":null,"FSGroup":null,"Sysctls":null,"FSGroupChangePolicy":null,"SeccompProfile":null,"AppArmorProfile":null,"SELinuxChangePolicy":null},"ImagePullSecrets":null,"Hostname":"","Subdomain":"","Affinity":null,"SchedulerName":"default-scheduler","Tolerations":null,"HostAliases":null,"PriorityClassName":"","Priority":null,"DNSConfig":null,"ReadinessGates":null,"RuntimeClassName":null,"EnableServiceLinks":null,"PreemptionPolicy":null,"Overhead":null,"TopologySpreadConstraints":null,"SetHostnameAsFQDN":null,"OS":null,"HostUsers":null,"SchedulingGates":null,"ResourceClaims":null,"Resources":null,"HostnameOverride":null,"SchedulingGroup":null,"EvictionResponders":null}}: field is immutable
+
+[2mhelm reported an error. That is not your machine misbehaving —[0m
+[2mit is part of the exercise. Read the error; it is evidence.[0m
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh upgrep -Rni "runAsNonRoot" broken-chart/[1Ptar -xOf /tmp/eb-image.tar etc/passwdgrep -Rni "runAsNonRoot" broken-chart/[22P./scenario.sh up[K./scenario.sh up[K./scenario.sh up[K[Kverify
+[?2004l==> verifying goal state in namespace debug-lab
+  [31mFAIL[0m  migrate Job has not completed (does it exist? did the chart even install cleanly?)
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [31mFAIL[0m  1 pod(s) in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m11 check(s) failing[0m, 0 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get pods -n debug-lab[27mkubectl get pods -n debug-lab
+[?2004lNAME                        READY   STATUS                       RESTARTS      AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0             30m
+backend-794c558bfb-h9snc    0/1     Running                      0             61s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0             30m
+gateway-69d86c676-6w9rh     0/1     Running                      0             60s
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0             30m
+migrate-lk8w9               0/1     CreateContainerConfigError   0             25m
+reporter-689754d5bb-dnl2g   0/1     Running                      0             60s
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0             30m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0             30m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             3 (20s ago)   60s
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab
+[?2004lNAME                        READY   STATUS                       RESTARTS      AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0             31m
+backend-794c558bfb-h9snc    0/1     Running                      0             68s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0             31m
+gateway-69d86c676-6w9rh     0/1     Running                      0             67s
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0             31m
+migrate-lk8w9               0/1     CreateContainerConfigError   0             25m
+reporter-689754d5bb-dnl2g   0/1     Running                      0             67s
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0             31m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0             31m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             3 (27s ago)   67s
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get pods -n debug-lab -w[27mkubectl get pods -n debug-lab -w
+[?2004lNAME                        READY   STATUS                       RESTARTS      AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0             31m
+backend-794c558bfb-h9snc    0/1     Running                      0             83s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0             31m
+gateway-69d86c676-6w9rh     0/1     Running                      0             82s
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0             31m
+migrate-lk8w9               0/1     CreateContainerConfigError   0             26m
+reporter-689754d5bb-dnl2g   0/1     Running                      0             82s
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0             31m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0             31m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             3 (42s ago)   82s
+worker-85c774d568-p22bv     0/1     Running                      4 (54s ago)   94s
+worker-85c774d568-p22bv     0/1     Error                        4 (54s ago)   94s
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             4 (2s ago)    95s
+^C[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab -w[K[9P./scenario.sh verify
+[?2004l==> verifying goal state in namespace debug-lab
+  [31mFAIL[0m  migrate Job has not completed (does it exist? did the chart even install cleanly?)
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [31mFAIL[0m  1 pod(s) in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+^C
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl delete job migrate -n debug-lab[27mkubectl delete job migrate -n debug-lab
+[?2004ljob.batch "migrate" deleted from debug-lab namespace
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7m./scenario.sh up[27m./scenario.sh up
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails unchanged
+namespace/debug-lab unchanged
+==> installing the broken chart
+Release "debug-lab" has been upgraded. Happy Helming!
+NAME: debug-lab
+LAST DEPLOYED: Sat Sep 19 06:04:13 2026
+NAMESPACE: debug-lab
+STATUS: deployed
+REVISION: 4
+TEST SUITE: None
+NOTES:
+debug-lab installed into namespace debug-lab.
+
+Goal state:
+  * migrate Job: Completed
+  * backend, gateway, worker, reporter, metrics: all pods Running and 1/1 Ready
+  * gateway /status reports {"self":"ok","backend":"ok",...}
+
+Check your progress at any time:
+  ./scenario.sh verify
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh upkubectl delete job migrate -n debug-lab[19P./scenario.sh verifykubectl get pods -n debug-lab -w[K[9P./scenario.sh verify[4Pupgrep -Rni "runAsNonRoot" broken-chart/[22P./scenario.sh upverifykubectl get pods -n debug-lab -w[K
+[?2004lNAME                        READY   STATUS                       RESTARTS       AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0              34m
+backend-794c558bfb-h9snc    0/1     Running                      0              4m43s
+eb-verify-probe             0/1     Completed                    0              2m53s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0              34m
+gateway-69d86c676-6w9rh     0/1     Running                      0              4m42s
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0              34m
+migrate-2t9pw               0/1     Completed                    0              20s
+reporter-689754d5bb-dnl2g   0/1     Running                      0              4m42s
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0              34m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0              34m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             5 (105s ago)   4m42s
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab[13P./scenario.sh upkubectl delete job migrate -n debug-lab[19P./scenario.sh verify
+[?2004l==> verifying goal state in namespace debug-lab
+  [32mPASS[0m  migrate Job completed
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [31mFAIL[0m  1 pod(s) in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m10 check(s) failing[0m, 1 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh verifykubectl get pods -n debug-lab[13P./scenario.sh upkubectl delete job migrate -n debug-lab[19P./scenario.sh verifykubectl get pods -n debug-lab -w
+[?2004lNAME                        READY   STATUS                       RESTARTS        AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0               35m
+backend-794c558bfb-h9snc    0/1     Running                      0               5m15s
+eb-verify-probe             0/1     Completed                    0               3m25s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0               35m
+gateway-69d86c676-6w9rh     0/1     Running                      0               5m14s
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0               35m
+migrate-2t9pw               0/1     Completed                    0               52s
+reporter-689754d5bb-dnl2g   0/1     Running                      0               5m14s
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0               35m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0               35m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             5 (2m17s ago)   5m14s
+^C[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl logs worker-85c774d568-p22bv -n debug-lab[27mkubectl logs worker-85c774d568-p22bv -n debug-lab
+[?2004l2026/09/19 06:05:32 FATAL: worker could not initialise its cache: mkdir /var/cache/app: read-only file system — the process needs a writable directory at /var/cache/app (mount a volume there, or set CACHE_DIR)
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs worker-85c774d568-p22bv -n debug-lab[1@\[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[24@[7mmetrics-547dccf75-wwckt [27mmetrics-547dccf75-wwckt 
+[?2004lError from server (BadRequest): container "metrics" in pod "metrics-547dccf75-wwckt" is waiting to start: CreateContainerConfigError
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs metrics-547dccf75-wwckt  -n debug-lab[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[25@[7meporter-6f8bff6b8d-frnkt [27meporter-6f8bff6b8d-frnkt 
+[?2004lerror: error from server (NotFound): pods "eporter-6f8bff6b8d-frnkt" not found in namespace "debug-lab"
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs eporter-6f8bff6b8d-frnkt   -n debug-lab[2Pmetrics-547dccf75-wwckt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pworker-85c774d568-p22bv[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pget pods -n debug-lab -w
+[?2004lNAME                        READY   STATUS                       RESTARTS       AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0              37m
+backend-794c558bfb-h9snc    0/1     Running                      0              7m31s
+eb-verify-probe             0/1     Completed                    0              5m41s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0              37m
+gateway-69d86c676-6w9rh     0/1     Running                      0              7m30s
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0              37m
+migrate-2t9pw               0/1     Completed                    0              3m8s
+reporter-689754d5bb-dnl2g   0/1     Running                      0              7m30s
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0              37m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0              37m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             6 (110s ago)   7m30s
+^C[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab -wlogs eporter-6f8bff6b8d-frnkt   -n debug-lab[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[25@[7mreporter-6f8bff6b8d-frnkt[27mreporter-6f8bff6b8d-frnkt[C
+[?2004lError from server (BadRequest): container "reporter" in pod "reporter-6f8bff6b8d-frnkt" is waiting to start: CreateContainerConfigError
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7m./scenario.sh up[27m./scenario.sh up
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails unchanged
+namespace/debug-lab unchanged
+==> installing the broken chart
+Release "debug-lab" has been upgraded. Happy Helming!
+NAME: debug-lab
+LAST DEPLOYED: Sat Sep 19 06:10:50 2026
+NAMESPACE: debug-lab
+STATUS: deployed
+REVISION: 5
+TEST SUITE: None
+NOTES:
+debug-lab installed into namespace debug-lab.
+
+Goal state:
+  * migrate Job: Completed
+  * backend, gateway, worker, reporter, metrics: all pods Running and 1/1 Ready
+  * gateway /status reports {"self":"ok","backend":"ok",...}
+
+Check your progress at any time:
+  ./scenario.sh verify
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh up[K[Kverify
+[?2004l==> verifying goal state in namespace debug-lab
+  [32mPASS[0m  migrate Job completed
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [31mFAIL[0m  1 pod(s) in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m10 check(s) failing[0m, 1 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh verify[4Pupkubectl logs reporter-6f8bff6b8d-frnkt -n debug-lab[19Pget pods -n debug-lab -w
+[?2004lNAME                        READY   STATUS                       RESTARTS      AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0             41m
+backend-794c558bfb-h9snc    0/1     Running                      0             11m
+eb-verify-probe             0/1     Completed                    0             9m32s
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0             41m
+gateway-69d86c676-6w9rh     0/1     Running                      0             11m
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0             41m
+migrate-2t9pw               0/1     Completed                    0             6m59s
+reporter-689754d5bb-dnl2g   0/1     Running                      0             11m
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0             41m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0             41m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             7 (15s ago)   11m
+^C[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab -w[12P./scenario.sh verify[4Pupkubectl logs reporter-6f8bff6b8d-frnkt -n debug-lab[19Pget pods -n debug-lab -wlogs eporter-6f8bff6b8d-frnkt   -n debug-lab[2Pmetrics-547dccf75-wwckt[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lError from server (BadRequest): container "metrics" in pod "metrics-547dccf75-wwckt" is waiting to start: CreateContainerConfigError
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs metrics-547dccf75-wwckt  -n debug-lab[18Pget pods -n debug-lab -w[K[K[K
+[?2004lNAME                        READY   STATUS                       RESTARTS      AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0             41m
+backend-794c558bfb-h9snc    0/1     Running                      0             11m
+eb-verify-probe             0/1     Completed                    0             10m
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0             41m
+gateway-69d86c676-6w9rh     0/1     Running                      0             11m
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0             41m
+migrate-2t9pw               0/1     Completed                    0             7m30s
+reporter-689754d5bb-dnl2g   0/1     Running                      0             11m
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0             41m
+worker-5fcd6b9b6b-ns6zz     0/1     CreateContainerConfigError   0             41m
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             7 (46s ago)   11m
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab[21@logs metrics-547dccf75-wwckt [C[C[C[C[C[C[C[C[C[C[C[C[C[18Pget pods -n debug-lab -w[12P./scenario.sh verifykubectl get pods -n debug-lab -wlogs metrics-547dccf75-wwckt  -n debug-lab[21Pget pods[C[C[C[C[C[C[C[C[C[C[C[C[C[Kkubectl get pods -n debug-lab[21@logs metrics-547dccf75-wwckt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[23@[7mworker-5fcd6b9b6b-ns6zz[27mworker-5fcd6b9b6b-ns6zz[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lError from server (BadRequest): container "worker" in pod "worker-5fcd6b9b6b-ns6zz" is waiting to start: CreateContainerConfigError
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs worker-5fcd6b9b6b-ns6zz -n debug-lab[C[1P[1P[1P[1P[1P[1@p[1@2[1@2[1@b[1@v
+[?2004lerror: error from server (NotFound): pods "worker-5fcd6b9b6b-p22bv" not found in namespace "debug-lab"
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs worker-5fcd6b9b6b-p22bv -n debug-lab[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[23@[7mworker-85c774d568-p22bv[27mworker-85c774d568-p22bv
+[?2004l2026/09/19 06:10:58 FATAL: worker could not initialise its cache: mkdir /var/cache/app: read-only file system — the process needs a writable directory at /var/cache/app (mount a volume there, or set CACHE_DIR)
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs worker-85c774d568-p22bv -n debug-lab5fcd6b9b6b[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cns6zz[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pget pods[C[C[C[C[C[C[C[C[C[C[C[C[C[21@logs metrics-547dccf75-wwckt [C[C[C[C[C[C[C[C[C[C[C[C[C[18Pget pods -n debug-lab -w[12P./scenario.sh verify[4Pupkubectl logs reporter-6f8bff6b8d-frnkt -n debug-lab./scenario.sh up[K
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails unchanged
+namespace/debug-lab unchanged
+==> installing the broken chart
+Release "debug-lab" has been upgraded. Happy Helming!
+NAME: debug-lab
+LAST DEPLOYED: Sat Sep 19 06:13:24 2026
+NAMESPACE: debug-lab
+STATUS: deployed
+REVISION: 6
+TEST SUITE: None
+NOTES:
+debug-lab installed into namespace debug-lab.
+
+Goal state:
+  * migrate Job: Completed
+  * backend, gateway, worker, reporter, metrics: all pods Running and 1/1 Ready
+  * gateway /status reports {"self":"ok","backend":"ok",...}
+
+Check your progress at any time:
+  ./scenario.sh verify
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh upkubectl logs worker-85c774d568-p22bv -n debug-lab5fcd6b9b6b[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C85c774d568[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scenario.sh up[K[K./scenario.sh up[K[K[K VER[K[K[Kverify
+[?2004l==> verifying goal state in namespace debug-lab
+  [32mPASS[0m  migrate Job completed
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [31mFAIL[0m  1 pod(s) in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m10 check(s) failing[0m, 1 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh verify[4Pupkubectl logs worker-85c774d568-p22bv -n debug-lab5fcd6b9b6b[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cns6zz[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pget pods[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lNAME                        READY   STATUS                       RESTARTS        AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0               43m
+backend-794c558bfb-h9snc    0/1     Running                      0               14m
+eb-verify-probe             0/1     Completed                    0               12m
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0               43m
+gateway-69d86c676-6w9rh     0/1     Running                      0               14m
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0               43m
+migrate-2t9pw               0/1     Completed                    0               9m40s
+reporter-689754d5bb-dnl2g   0/1     Running                      0               14m
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0               43m
+worker-5db75956f7-9gdq6     0/1     Running                      0               30s
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             7 (2m56s ago)   14m
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab[9P./scenario.sh verify[4Pupkubectl logs worker-85c774d568-p22bv -n debug-lab[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[10P./scenario.sh upkubectl logs  -n debug-lab[10P./scenario.sh upverifykubectl get pods -n debug-lab[Kkubectl get pods -n debug-lab[9P./scenario.sh verify[4Pupkubectl logs  -n debug-lab[23@worker-5fcd6b9b6b-p22bv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[23@[7mworker-5db75956f7-9gdq6[27mworker-5db75956f7-9gdq6
+[?2004l2026/09/19 06:13:26 eb-debug-app 2.0.0 starting: mode=worker pod=worker-5db75956f7-9gdq6 listening on :8081 (image default is 8081; set PORT to override)
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs worker-5db75956f7-9gdq6 -n debug-lab[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@ [23@[7mworker-85c774d568-p22bv[27mworker-85c774d568-p22bv[C
+[?2004l2026/09/19 06:10:58 FATAL: worker could not initialise its cache: mkdir /var/cache/app: read-only file system — the process needs a writable directory at /var/cache/app (mount a volume there, or set CACHE_DIR)
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get pods -n debug-lab[27mkubectl get pods -n debug-lab
+[?2004lNAME                        READY   STATUS                       RESTARTS     AGE
+backend-7948fd6b4b-5d47f    0/1     CreateContainerConfigError   0            46m
+backend-794c558bfb-h9snc    0/1     Running                      0            16m
+eb-verify-probe             0/1     Completed                    0            14m
+gateway-5cbdcd4bf8-782g4    0/1     CreateContainerConfigError   0            46m
+gateway-69d86c676-6w9rh     0/1     Running                      0            16m
+metrics-547dccf75-wwckt     0/1     CreateContainerConfigError   0            46m
+migrate-2t9pw               0/1     Completed                    0            11m
+reporter-689754d5bb-dnl2g   0/1     Running                      0            16m
+reporter-6f8bff6b8d-frnkt   0/1     CreateContainerConfigError   0            46m
+worker-5db75956f7-9gdq6     0/1     Running                      0            2m43s
+worker-85c774d568-p22bv     0/1     CrashLoopBackOff             8 (7s ago)   16m
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7m./scenario.sh verify[27m./scenario.sh verify
+[?2004l==> verifying goal state in namespace debug-lab
+  [32mPASS[0m  migrate Job completed
+  [31mFAIL[0m  deployment backend: 0/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [31mFAIL[0m  deployment worker: 0/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [31mFAIL[0m  1 pod(s) in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m10 check(s) failing[0m, 1 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl describe pod worker-5db75956f7-9gdq6 -n debug-lab[27mkubectl describe pod worker-5db75956f7-9gdq6 -n debug-lab
+[?2004lName:             worker-5db75956f7-9gdq6
+Namespace:        debug-lab
+Priority:         0
+Service Account:  default
+Node:             enterprisebot-control-plane/172.18.0.2
+Start Time:       Sat, 19 Sep 2026 06:13:24 +0000
+Labels:           app=worker
+                  app.kubernetes.io/managed-by=Helm
+                  app.kubernetes.io/part-of=eb-debug-lab
+                  helm.sh/chart=debug-lab-2.0.0
+                  pod-template-hash=5db75956f7
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.25
+IPs:
+  IP:           10.244.0.25
+Controlled By:  ReplicaSet/worker-5db75956f7
+Containers:
+  worker:
+    Container ID:   containerd://9b54c79fa7fe61b5108f1e9df07522fcd29619874591f11efeaabc31b31c9400
+    Image:          docker.io/ebinterview/eb-debug-app:1.0.1
+    Image ID:       docker.io/ebinterview/eb-debug-app@sha256:17f41698c10f5c18693339281b92d3cfef16d9fcffcad440a24e7ab19e05c443
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Sat, 19 Sep 2026 06:13:26 +0000
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     200m
+      memory:  128Mi
+    Requests:
+      cpu:      50m
+      memory:   64Mi
+    Readiness:  http-get http://:8080/healthz delay=3s timeout=3s period=5s #success=1 #failure=3
+    Environment:
+      APP_MODE:  worker
+      APP_NAME:  worker
+      VERSION:   2.0.0
+    Mounts:
+      /var/cache/app from cache (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-svfsg (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  cache:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  kube-api-access-svfsg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                   From               Message
+  ----     ------     ----                  ----               -------
+  Normal   Scheduled  3m22s                 default-scheduler  Successfully assigned debug-lab/worker-5db75956f7-9gdq6 to enterprisebot-control-plane
+  Normal   Pulled     3m20s                 kubelet            spec.containers{worker}: Container image "docker.io/ebinterview/eb-debug-app:1.0.1" already present on machine and can be accessed by the pod
+  Normal   Created    3m20s                 kubelet            spec.containers{worker}: Container created
+  Normal   Started    3m20s                 kubelet            spec.containers{worker}: Container started
+  Warning  Unhealthy  77s (x25 over 3m14s)  kubelet            spec.containers{worker}: Readiness probe failed: Get "http://10.244.0.25:8080/healthz": dial tcp 10.244.0.25:8080: connect: connection refused
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mgrep -n -A15 -B3 "env:" broken-chart/templates/worker.yaml[27mgrep -n -A15 -B3 "env:" broken-chart/templates/worker.yaml
+[?2004l[32m[K26[m[K[36m[K-[m[K          ports:
+[32m[K27[m[K[36m[K-[m[K            - name: http
+[32m[K28[m[K[36m[K-[m[K              containerPort: {{ .Values.common.port }}
+[32m[K29[m[K[36m[K:[m[K          [01;31m[Kenv:[m[K
+[32m[K30[m[K[36m[K-[m[K            {{- range $name, $value := .Values.worker.env }}
+[32m[K31[m[K[36m[K-[m[K            - name: {{ $name }}
+[32m[K32[m[K[36m[K-[m[K              value: {{ $value | quote }}
+[32m[K33[m[K[36m[K-[m[K            {{- end }}
+[32m[K34[m[K[36m[K-[m[K          readinessProbe:
+[32m[K35[m[K[36m[K-[m[K            httpGet:
+[32m[K36[m[K[36m[K-[m[K              path: /healthz
+[32m[K37[m[K[36m[K-[m[K              port: {{ .Values.common.port }}
+[32m[K38[m[K[36m[K-[m[K            initialDelaySeconds: 3
+[32m[K39[m[K[36m[K-[m[K            periodSeconds: 5
+[32m[K40[m[K[36m[K-[m[K            timeoutSeconds: 3
+[32m[K41[m[K[36m[K-[m[K          securityContext:
+[32m[K42[m[K[36m[K-[m[K            runAsNonRoot: true
+[32m[K43[m[K[36m[K-[m[K            runAsUser: 65532
+[32m[K44[m[K[36m[K-[m[K            readOnlyRootFilesystem: true
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mgrep -Rni "common.port" broken-chart/templates/[27mgrep -Rni "common.port" broken-chart/templates/
+[?2004l[35m[Kbroken-chart/templates/backend.yaml[m[K[36m[K:[m[K[32m[K25[m[K[36m[K:[m[K              containerPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/backend.yaml[m[K[36m[K:[m[K[32m[K34[m[K[36m[K:[m[K              port: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/backend.yaml[m[K[36m[K:[m[K[32m[K61[m[K[36m[K:[m[K      targetPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/gateway.yaml[m[K[36m[K:[m[K[32m[K25[m[K[36m[K:[m[K              containerPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/gateway.yaml[m[K[36m[K:[m[K[32m[K34[m[K[36m[K:[m[K              port: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/gateway.yaml[m[K[36m[K:[m[K[32m[K61[m[K[36m[K:[m[K      targetPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/metrics.yaml[m[K[36m[K:[m[K[32m[K25[m[K[36m[K:[m[K              containerPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/metrics.yaml[m[K[36m[K:[m[K[32m[K34[m[K[36m[K:[m[K              port: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/reporter.yaml[m[K[36m[K:[m[K[32m[K26[m[K[36m[K:[m[K              containerPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/reporter.yaml[m[K[36m[K:[m[K[32m[K39[m[K[36m[K:[m[K              port: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/reporter.yaml[m[K[36m[K:[m[K[32m[K66[m[K[36m[K:[m[K      targetPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/worker.yaml[m[K[36m[K:[m[K[32m[K28[m[K[36m[K:[m[K              containerPort: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[35m[Kbroken-chart/templates/worker.yaml[m[K[36m[K:[m[K[32m[K37[m[K[36m[K:[m[K              port: {{ .Values.[01;31m[Kcommon.port[m[K }}
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ grep -Rni "common.port" broken-chart/templates/[Kgrep -Rni "common.port" broken-chart/templates/n -A15 -B3 "env:" broken-chart/templates/worker.yaml[1Pkubectl describe pod worker-5db75956f7-9gdq6 -n debug-lab[37P./scenario.sh verifykubectl get pods -n debug-lab[9P./scenario.sh verify[K[K[K[K[K[Kup
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails unchanged
+namespace/debug-lab unchanged
+==> installing the broken chart
+Release "debug-lab" has been upgraded. Happy Helming!
+NAME: debug-lab
+LAST DEPLOYED: Sat Sep 19 06:24:33 2026
+NAMESPACE: debug-lab
+STATUS: deployed
+REVISION: 7
+TEST SUITE: None
+NOTES:
+debug-lab installed into namespace debug-lab.
+
+Goal state:
+  * migrate Job: Completed
+  * backend, gateway, worker, reporter, metrics: all pods Running and 1/1 Ready
+  * gateway /status reports {"self":"ok","backend":"ok",...}
+
+Check your progress at any time:
+  ./scenario.sh verify
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh upgrep -Rni "common.port" broken-chart/templates/n -A15 -B3 "env:" broken-chart/templates/worker.yaml[11PRni "common.port" broken-chart/templates/[31P./scenario.sh up[K[K[K verifu[Ky
+[?2004l==> verifying goal state in namespace debug-lab
+  [32mPASS[0m  migrate Job completed
+  [32mPASS[0m  deployment backend: 1/1 ready
+  [31mFAIL[0m  deployment gateway: 0/1 ready
+  [32mPASS[0m  deployment worker: 1/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [31mFAIL[0m  deployment metrics: 0/1 ready
+  [32mPASS[0m  no pods in CrashLoopBackOff
+  [31mFAIL[0m  ServiceAccount debug-lab/reporter cannot list pods
+  [31mFAIL[0m  backend does not answer on http://backend:8080/healthz
+  [31mFAIL[0m  gateway /status does not report backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m7 check(s) failing[0m, 4 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh verify[4Pupgrep -Rni "common.port" broken-chart/templates/n -A15 -B3 "env:" broken-chart/templates/worker.yaml[1Pkubectl describe pod worker-5db75956f7-9gdq6 -n debug-lab[37P./scenario.sh verifykubectl describe pod worker-5db75956f7-9gdq6 -n debug-lab[37P./scenario.sh verifykubectl get pods -n debug-lab
+[?2004lNAME                        READY   STATUS      RESTARTS   AGE
+backend-db59c7674-w24ds     1/1     Running     0          24s
+eb-verify-probe             0/1     Completed   0          23m
+gateway-5bb9df698-l7r8c     0/1     Running     0          24s
+gateway-69d86c676-6w9rh     0/1     Running     0          25m
+migrate-2t9pw               0/1     Completed   0          20m
+reporter-5c97c99584-vkjrb   0/1     Running     0          23s
+reporter-689754d5bb-dnl2g   0/1     Running     0          25m
+worker-5c94fd6479-82dnk     1/1     Running     0          23s
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab
+[?2004lNAME                        READY   STATUS      RESTARTS   AGE
+backend-db59c7674-w24ds     1/1     Running     0          46s
+eb-verify-probe             0/1     Completed   0          23m
+gateway-5bb9df698-l7r8c     0/1     Running     0          46s
+gateway-69d86c676-6w9rh     0/1     Running     0          25m
+migrate-2t9pw               0/1     Completed   0          21m
+reporter-5c97c99584-vkjrb   0/1     Running     0          45s
+reporter-689754d5bb-dnl2g   0/1     Running     0          25m
+worker-5c94fd6479-82dnk     1/1     Running     0          45s
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get svc backend -n debug-lab -o wide[27mkubectl get svc backend -n debug-lab -o wide
+[?2004lNAME      TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+backend   ClusterIP   10.96.42.71   <none>        8080/TCP   56m   app=backend
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl describe svc backend -n debug-lab[27mkubectl describe svc backend -n debug-lab
+[?2004lName:                     backend
+Namespace:                debug-lab
+Labels:                   app=backend
+                          app.kubernetes.io/managed-by=Helm
+                          app.kubernetes.io/part-of=eb-debug-lab
+                          helm.sh/chart=debug-lab-2.0.0
+Annotations:              meta.helm.sh/release-name: debug-lab
+                          meta.helm.sh/release-namespace: debug-lab
+Selector:                 app=backend
+Type:                     ClusterIP
+IP Family Policy:         SingleStack
+IP Families:              IPv4
+IP:                       10.96.42.71
+IPs:                      10.96.42.71
+Port:                     http  8080/TCP
+TargetPort:               8080/TCP
+Endpoints:                10.244.0.26:8080
+Session Affinity:         None
+Internal Traffic Policy:  Cluster
+Events:                

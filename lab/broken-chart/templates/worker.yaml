@@ -20,6 +20,9 @@ spec:
         - name: worker
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+            - name: cache
+              mountPath: /var/cache/app
           ports:
             - name: http
               containerPort: {{ .Values.common.port }}
@@ -37,9 +40,13 @@ spec:
             timeoutSeconds: 3
           securityContext:
             runAsNonRoot: true
+            runAsUser: 65532
             readOnlyRootFilesystem: true
             allowPrivilegeEscalation: false
             capabilities:
               drop: ["ALL"]
           resources:
             {{- toYaml .Values.worker.resources | nindent 12 }}
+      volumes:
+        - name: cache
+          emptyDir: {}

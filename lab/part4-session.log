@@ -6674,4 +6674,1950 @@ startTheWorld: inconsistent mp->nextpruntime: unexpected SPWRITE function all go
 traceStopReadCPU called with trace enabledattempted to trace a bad status for a proccrypto/sha1: invalid hash state identifierpoly1305: write to MAC after Sum or VerifyPrintableString contains invalid characterMapIter.Value called on exhausted iteratorreflect: cannot convert slice with length internal error: call to runtimeSource.Seedinsufficient data for resource body lengthreadiness failed: backend not reachable: %vtls: received unexpected key update messagetls: server did not select an ALPN protocoltls: server sent unrequested session tickettls: received malformed key_share extensiontls: invalid early data for QUIC connectionx509: failed to parse dnsName constraint %qmultiple Read calls return no data or errornet/http: timeout awaiting response headerstimeout waiting for SETTINGS frames from %vhttp2: server closing client connection: %vhttp2: unexpected ALPN protocol %q; want %qTransport: unhandled response frame type %Thttp2: too many 1xx informational responsesError enabling Transport HTTP/2 support: %vmult64bitPow10: power of 10 is out of rangeinterrupted system call should be restartedreflect: nil type passed to Type.Implementsruntime: opened unexpected file descriptor /memory/classes/metadata/mcache/inuse:bytesruntime.SetFinalizer: first argument is nilruntime.SetFinalizer: finalizer already setgcBgMarkWorker: unexpected gcMarkWorkerModenon in-use span found with specials bit setgrew heap, but no adequate free space foundroot level max pages doesn't fit in summaryruntime.Pinner: argument is not a pointer: runtime: releaseSudog with non-nil gp.paramunknown runnable goroutine during bootstrapruntime: casfrom_Gscanstatus bad oldval gp=runtime:stoplockedm: lockedg (atomicstatus=methodValueCallFrameObjs is not in a moduleexplicit time type given to non-time memberbufio: tried to rewind past start of bufferchunked encoding contains too much non-dataedwards25519: invalid point encoding lengthtls: server's Finished message was incorrecttls: server sent an incorrect legacy versiontls: unexpected ECH extension in serverHellox509: invalid RDNSequence: invalid attributex509: internal error: cannot parse domain %qcrypto/x509: error fetching intermediate: %whttp: putIdleConn: too many idle connectionsconnection exceeded flow control window sizehttp2: could not negotiate protocol mutuallyhttp2: invalid Connection request header: %qhttp: Request.ContentLength=%d with nil Bodymult128bitPow10: power of 10 is out of range using value obtained using unexported fieldspan on userArena.faultList has invalid sizeruntime: lfstack.push invalid packing: node=out of memory allocating heap arena metadataruntime: cannot remap pages in address space/cpu/classes/scavenge/background:cpu-secondsruntime: unexpected metric registration for gcmarknewobject called while doing checkmarkactive sweepers found at start of mark phaseno P available, write barriers are forbiddencannot trace user goroutine on its own stackunsafe.Slice: ptr is nil and len is not zerocipher: NewGCM requires 128-bit block ciphercrypto/sha256: invalid hash state identifiercrypto/sha512: invalid hash state identifierreflect: funcLayout with interface receiver reflect: slice length out of range in SetLenencoding alphabet contains newline characterencoding alphabet includes duplicate symbolsmime: unexpected content after media subtypeinsufficient data for calculated length type/var/run/secrets/kubernetes.io/serviceaccountcontext: internal error: missing cancel errortls: internal error: unexpected renegotiationx509: IP constraint contained invalid mask %xx509: certificate signed by unknown authorityjson.RawMessage: UnmarshalJSON on nil pointerhttp: putIdleConn: connection is in bad statehttp: no Client.Transport or DefaultTransportinvalid request :path %q from URL.Opaque = %qunbuffered done channel passed in for type %THTTP/1.1 %d %s%sUnsupported transfer encodingnet/http: internal error: connCount underflowcannot send after transport endpoint shutdownreflect: nil type passed to Type.AssignableTocrypto/rsa: message too long for RSA key sizetransitioning GC to the same state as before?produced a trigger greater than the heap goaltried to run scavenger from another goroutineruntime: failed mSpanList.remove span.npages=exitsyscall: syscall frame is no longer validunsafe.String: ptr is nil and len is not zerozero length explicit tag was not an asn1.Flagmath/big: cannot unmarshal %q into a *big.Intreflect: internal error: invalid method indexbufio.Scanner: Read returned impossible countw must be at least 2 by the definition of NAFparsing/packing of this section has completedPSSWithSHA256PSSWithSHA384PSSWithSHA512Ed25519tls: server chose an unconfigured cipher suitetls: failed to parse certificate from server: tls: server did not echo the legacy session IDtls: server accepted 0-RTT with the wrong ALPNtls: received new session ticket from a clientx509: failed to unmarshal elliptic curve pointx509: failed to parse rfc822Name constraint %qx509: malformed signature algorithm identifierGOAWAY close timer fired; closing conn from %vinternal error: cannot create stream with id 0http2: Transport creating client conn %p to %vprotocol error: received DATA after END_STREAMclient sent an HTTP request to an HTTPS servernet/http: internal error: misuse of tryDelivernet/http: too many 1xx informational responsesTime.UnmarshalJSON: input is not a JSON stringbytes.Reader.UnreadByte: at beginning of sliceed25519: internal error: setting scalar failedslice bounds out of range [:%x] with length %ypanicwrap: unexpected string after type name: memory reservation exceeds address space limittried to park scavenger from another goroutinereleased less than one physical page of memory (bad use of unsafe.Pointer? try -d=checkptr)
 span set block with unpopped elements found in resetcasfrom_Gscanstatus: gp->status is not in scan statetls: received unexpected handshake message of type %Ttls: unexpected server_name extension in server hellotls: HKDF-Expand-Label invocation failed unexpectedlyx509: certificate specifies an incompatible key usagehttp: putIdleConn: too many idle connections for hosthttp2: Framer %p: failed to decode just-written frameillegal use of AllowIllegalReads with ReadMetaHeadershttp2: Transport failed to get client conn for %s: %vnon-CONNECT pattern with unclean path can never matchdescribeConflict called with non-conflicting patternsreflect: non-interface type passed to Type.Implementscrypto/elliptic: attempted operation on invalid pointnon-concurrent sweep failed to drain all sweep queuesexited a goroutine internally locked to the OS threadcrypto/ecdh: internal error: mismatched isLess inputsbufio.Scan: too many empty tokens without progressingchacha20: internal error: wrong dst and/or src lengthcryptobyte: Builder is exceeding its fixed-size buffertls: server resumed a session with a different versiontls: server accepted 0-RTT with the wrong cipher suitetls: server sent ECH retry configs after accepting ECHtls: certificate used with invalid signature algorithmx509: cannot verify signature: algorithm unimplementedx509: invalid RDNSequence: invalid attribute value: %sURI with IP (%q) cannot be matched against constraintshttp: Request.Write on Request with no Host or URL setread loop ending; caller owns writable underlying conninternal error: expected to be already writing a framehttp2: received GOAWAY %+v, starting graceful shutdownhttp2: handler wrote more than declared Content-Lengthnet/http: can't write control character in Request.URLbytes.Buffer: reader returned negative count from Readmin size of malloc header is not a size class boundarygcControllerState.findRunnable: blackening not enabledno goroutines (main called runtime.Goexit) - deadlock!trace: non-empty full trace buffer for done generationtrace: non-empty full trace buffer for next generation	goroutine running on other thread; stack unavailable
 tried to trace goroutine with invalid or unsupported statuscrypto/ecdh: private key and public key curves do not matchreflect: reflect.Value.Elem on an invalid notinheap pointerbufio.Scanner: SplitFunc returns advance count beyond inputcannot determine namespace (set NAMESPACE or run in-cluster)tls: no supported versions satisfy MinVersion and MaxVersiontls: initial handshake had non-empty renegotiation extensiontls: server resumed a session with a different EMS extension (Client.Timeout or context cancellation while reading body)internal error: attempt to send frame on a closed stream: %vmalformed response from server: missing status pseudo headernet/http: server response headers exceeded %d bytes; abortedmanual span allocation called with non-manually-managed typeaddr range base and limit are not in the same memory segmentruntime: failed to configure profiling timer; timer_settime(runtime: malformed profBuf buffer - tag and data out of syncreflect: call of reflect.Value.Len on ptr to non-array Valuetls: unsupported certificate: private key is %T, expected *%Ttls: EncryptedClientHelloConfigList contains no valid configstls: server sent a ServerHello extension forbidden in TLS 1.3x509: failed to parse URI constraint %q: cannot be IP addressruntime: may need to increase max user processes (ulimit -u)
-%s115792089210356248762697446949407573530086143415290314195533631308867097853951115792089210356248762697446949407573529996955224135760342422259061068512044369range function continued iteration after function for loop body returned falseno ServiceAccount token found at %s (is automountServiceAccountToken disabled?)tls: client certificate private key of type %T does not implement crypto.Signerhttp2: server closing client connection; error reading frame from client %s: %vcannot convert slice with length %y to array or pointer to array with length %xtls: either ServerName or InsecureSkipVerify must be specified in the tls.Configx509: invalid signature: parent certificate cannot sign this kind of certificatehttp: RoundTripper implementation (%T) returned a nil *Response with a nil errorbug: unexpected way for two patterns %s and %s to conflict: methods %s, paths %s
+%s115792089210356248762697446949407573530086143415290314195533631308867097853951115792089210356248762697446949407573529996955224135760342422259061068512044369range function continued iteration after function for loop body returned falseno ServiceAccount token found at %s (is automountServiceAccountToken disabled?)tls: client certificate private key of type %T does not implement crypto.Signerhttp2: server closing client connection; error reading frame from client %s: %vcannot convert slice with length %y to array or pointer to array with length %xtls: either ServerName or InsecureSkipVerify must be specified in the tls.Configx509: invalid signature: parent certificate cannot sign this kind of certificatehttp: RoundTripper implementation (%T) returned a nil *Response with a nil errorbug: unexpected way for two patterns %s and %s to conflict: methods %s, paths %scrypto/rand: blocked for 60 seconds waiting to read random data from the kernel
+vendor/golang.org/x/net/http/httpguts.tokenEqual
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get --raw "/api/v1/namespaces/debug-lab/pods" | wc -c[27mkubectl get --raw "/api/v1/namespaces/debug-lab/pods" | wc -c
+[?2004l51138
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.jso[27m[7mn[27m[7m [27m
+
+[7mwc -c /tmp/pods.json[27m[A[A[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.json
+
+wc -c /tmp/pods.json
+[?2004l51138 /tmp/pods.json
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.jso[27m[7mn[27m[7m [27m
+
+[7mwc -c /tmp/pods.json[27m[A[A[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.json
+
+[1Pwc -c /tmp/pods.jso[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mpython3 -m json.tool /tmp/pods.json >/dev/null && echo "JSON VALID"[27mpython3 -m json.tool /tmp/pods.json >/dev/null && echo "JSON VALID"
+[?2004lJSON VALID
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ python3 -m json.tool /tmp/pods.json >/dev/null && echo "JSON VALID"wc -c /tmp/pods.json[Kkubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.json[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P" | wc -c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -E '/var/run/secrets|serviceaccount|ca.crt|namespace|token' | tail -40[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci '4096|8192|16384|32768|65536|limitreader|re[14@adall|content-length|body' | tail -8[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab   -o jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}'[K[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cdeployment reporter -n debug-lab   -o jsonpath='replicas={.spec.repl[28@icas} strategy={.spec.strategy}{"\n"[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[36Prs -n debug-lab -l app=reporter
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -F -B10 -A20 'parse pod list'Eo '[A-Z][A-Z0-9_]{3,}' | sort -u | grep -E 'KUBE|API|POD|NAMESPACE|TOKEN|REPORT|LIMIT|BUFFER|HTTP'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [25Pkubectl exec -n debug-lab reporter-api-test -- sh -c
+TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+CACERT=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt)
+'[A[A[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ grep -RniE 'unexpected end|reporter|pod list|six ways|defect|hint|truncate|buffe[4Pr' .   --exclude='part4-session.log'   --exclude-dir='.git'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [14Pkubectl exec -n debug-lab reporter-7bc54fd949-gvttz -- env | sort
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pget pods -n debug-lab -l app=reporterexec -n debug-lab reporter-7bc54fd949-gvttz -- env | sort[20Pget pods -n debug-lab -l app=reporter[25P./scenario.sh verifykubectl get pods -n debug-lab -l app=reporterexec -n debug-lab reporter-7bc54fd949-gvttz -- env | sort[20Pget pods -n debug-lab -l app=reporterexec -n debug-lab reporter-7bc54fd949-gvttz -- env | sortgrep -RniE 'unexpected end|reporter|pod list|six ways|defect|hint|truncate|buffer' .   --exclude='part4-session.log'   --exclude-dir='.git'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [25Pkubectl exec -n debug-lab reporter-api-test -- sh -c '
+TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+CACERT=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt)
+'[A[A[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ grep -RniE 'unexpected end|reporter|pod list|six ways|defect|hint|truncate|buffe[4Pr' .   --exclude='part4-session.log'   --exclude-dir='.git'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [14Pkubectl exec -n debug-lab reporter-7bc54fd949-gvttz -- env | sort
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pget pods -n debug-lab -l app=reporter[25P./scenario.sh verifykubectl top pod -n debug-lab 2>/dev/null || echo "metrics-server not available" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scenario.sh verify[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[Kup
+[?2004l==> applying cluster environment (cluster-state/)
+limitrange/debug-lab-guardrails unchanged
+namespace/debug-lab unchanged
+==> installing the broken chart
+Release "debug-lab" has been upgraded. Happy Helming!
+NAME: debug-lab
+LAST DEPLOYED: Sat Sep 19 09:02:23 2026
+NAMESPACE: debug-lab
+STATUS: deployed
+REVISION: 11
+TEST SUITE: None
+NOTES:
+debug-lab installed into namespace debug-lab.
+
+Goal state:
+  * migrate Job: Completed
+  * backend, gateway, worker, reporter, metrics: all pods Running and 1/1 Ready
+  * gateway /status reports {"self":"ok","backend":"ok",...}
+
+Check your progress at any time:
+  ./scenario.sh verify
+
+Lab is (partially) installed. Investigate with kubectl, fix the chart,
+re-run './scenario.sh up' to apply your fixes, and './scenario.sh verify'
+to check progress.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh up][K[K[Kverify
+[?2004l==> verifying goal state in namespace debug-lab
+  [32mPASS[0m  migrate Job completed
+  [32mPASS[0m  deployment backend: 1/1 ready
+  [32mPASS[0m  deployment gateway: 1/1 ready
+  [32mPASS[0m  deployment worker: 1/1 ready
+  [31mFAIL[0m  deployment reporter: 0/1 ready
+  [32mPASS[0m  deployment metrics: 1/1 ready
+  [32mPASS[0m  no pods in CrashLoopBackOff
+  [32mPASS[0m  ServiceAccount debug-lab/reporter can list pods
+  [32mPASS[0m  backend answers on http://backend:8080/healthz
+  [32mPASS[0m  gateway /status reports backend=ok
+  [31mFAIL[0m  reporter /report does not return a pod count
+
+[31m2 check(s) failing[0m, 9 passing. Keep digging — every failure is a symptom.
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ./scenario.sh verify[4Puppython3 -m json.tool /tmp/pods.json >/dev/null && echo "JSON VALID"wc -c /tmp/pods.json[Kkubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.json[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P" | wc -c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -E '/var/run/secrets|serviceaccount|ca.crt|namespace|token' | tail -40[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci '4096|8192|16384|32768|65536|limitreader|re[14@adall|content-length|body' | tail -8[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab   -o jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}'[K[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cdeployment reporter -n debug-lab   -o jsonpath='replicas={.spec.repl[28@icas} strategy={.spec.strategy}{"\n"[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[36Prs -n debug-lab -l app=reporter
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -F -B10 -A20 'parse pod list'Eo '[A-Z][A-Z0-9_]{3,}' | sort -u | grep -E 'KUBE|API|POD|NAMESPACE|TOKEN|REPORT|LIMIT|BUFFER|HTTP'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17PF -B10 -A20 'parse pod list
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pkubectl get rs -n debug-lab -l app=reporter
+[?2004lNAME                  DESIRED   CURRENT   READY   AGE
+reporter-5c97c99584   0         0         0       164m
+reporter-689754d5bb   0         0         0       3h9m
+reporter-6f8bff6b8d   0         0         0       3h39m
+reporter-77cb54598    1         1         0       122m
+reporter-7bc54fd949   1         1         0       120m
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get rs -n debug-lab -l app=reporter[23P./scenario.sh verify[4Puppython3 -m json.tool /tmp/pods.json >/dev/null && echo "JSON VALID"wc -c /tmp/pods.json[Kkubectl get --raw "/api/v1/namespaces/debug-lab/pods?limit=100" > /tmp/pods.json[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P" | wc -c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -E '/var/run/secrets|serviceaccount|ca.crt|namespace|token' | tail -40[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci '4096|8192|16384|32768|65536|limitreader|re[14@adall|content-length|body' | tail -8[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl get pods -n debug-lab   -o jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}'[K[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cdeployment reporter -n debug-lab   -o jsonpath='replicas={.spec.repl[28@icas} strategy={.spec.strategy}{"\n"[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cpods -n debug-lab   -o jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}'[K[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cdeployment reporter -n debug-lab   -o jsonpath='replicas={.spec.repl[28@icas} strategy={.spec.strategy}{"\n"[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[36Prs -n debug-lab -l app=reporter
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdeployment reporter -n debug-lab   -o jsonpath='replicas={.spec.replicas} strategy={.spec.strategy}{"\n"}'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[36Prs -n debug-lab -l app=reporter
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -F -B10 -A20 'parse pod list'Eo '[A-Z][A-Z0-9_]{3,}' | sort -u | grep -E 'KUBE|API|POD|NAMESPACE|TOKEN|REPORT|LIMIT|BUFFER|HTTP'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [25Pkubectl exec -n debug-lab reporter-api-test -- sh -c
+TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+CACERT=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt)
+'[A[A[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ grep -RniE 'unexpected end|reporter|pod list|six ways|defect|hint|truncate|buffe[4Pr' .   --exclude='part4-session.log'   --exclude-dir='.git'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [14Pkubectl exec -n debug-lab reporter-7bc54fd949-gvttz -- env | sort
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pget pods -n debug-lab -l app=reporter[25P./scenario.sh verifykubectl get pods -n debug-lab -l app=reporter[25P./scenario.sh verifykubectl top pod -n debug-lab 2>/dev/null || echo "metrics-server not available" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pget --raw "/api/v1/namespaces/debug-lab/pods?limit=5" | wc -c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[Cstrings /tmp/eb-debug-app | grep -Ei 'NAMESPACE|KUBERNETES|pod list|serviceaccount|token|ca.crt|api/v1' | tail -80[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ docker rm inspect-eb[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp inspect-eb:/eb-debug-app /tmp/eb-debug-appreate --name inspect-eb docker.io/ebinterview/eb-debug-app:1.0.151138[Kkubectl get --raw "/api/v1/namespaces/debug-lab/pods" | wc -c["PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin","SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"][A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ ocker image inspect docker.io/ebinterview/eb-debug-app:1.0.1   --format '{{json [26P.Config.Env}}'[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ docker image inspect docker.io/ebinterview/eb-debug-app:1.0.1   --format '{{json[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [C[C[C[C[C[C[C[16Prun --rm docker.io/ebinterview/eb-debug-app:1.0.1 --help
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pkubectl get pods -n debug-lab[9P./scenario.sh verifykubectl delete pod eb-verify-probe -n debug-lab[18Pget pods[C[C[C[C[C[C[C[C[C[C[C[C[C[9P./scenario.sh verifykubectl get pods -n debug-lab[9P./scenario.sh verifykubectl get pods -n debug-lab[13P./scenario.sh upkubectl describe pod reporter-7bc54fd949-gvttz -n debug-lablogs reporter-7bc54fd949-gvttz -n debug-lab --tail=30[16Pget pods -n debug-lab -l app=reporterlogs reporter-7bc54fd949-gvttz -n debug-lab --tail=30[16Pget pods -n debug-lab -l app=reporterlogs reporter-7bc54fd949-gvttz -n debug-lab --tail=30[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[19@[7mreporter-7bc54fd949[27mreporter-7bc54fd949[C
+[?2004lerror: error from server (NotFound): pods "reporter-7bc54fd949" not found in namespace "debug-lab"
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ kubectl logs reporter-7bc54fd949 -n debug-lab --tail=30[K[K[K[K[K[K[K[K[K[K
+[?2004lerror: error from server (NotFound): pods "reporter-7bc54fd949" not found in namespace "debug-lab"
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl get pods -n debug-lab | grep reporter[27mkubectl get pods -n debug-lab | grep reporter
+[?2004l[01;31m[Kreporter[m[K-77cb54598-k5th7    0/1     Running     0          145m
+[01;31m[Kreporter[m[K-7bc54fd949-gvttz   0/1     Running     0          144m
+[?2004h]0;pooja@DESKTOP-J2QCD1V: /mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[01;32mpooja@DESKTOP-J2QCD1V[00m:[01;34m/mnt/c/Users/pooja/Suhas/Enterprisebot/enterprisebot-assessment/lab[00m$ [7mkubectl logs -n debug-lab reporter-7bc54fd949-gvttz[27mkubectl logs -n debug-lab reporter-7bc54fd949-gvttz
+[?2004l2026/09/19 07:08:15 eb-debug-app 2.0.0 starting: mode=reporter pod=reporter-7bc54fd949-gvttz listening on :8080 (image default is 8081; set PORT to override)
+2026/09/19 07:08:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:08:21 GET /healthz -> 503 (from 10.244.0.1:44040)
+2026/09/19 07:08:26 GET /healthz -> 503 (from 10.244.0.1:44042)
+2026/09/19 07:08:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:08:31 GET /healthz -> 503 (from 10.244.0.1:47950)
+2026/09/19 07:08:36 GET /healthz -> 503 (from 10.244.0.1:47960)
+2026/09/19 07:08:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:08:41 GET /healthz -> 503 (from 10.244.0.1:48998)
+2026/09/19 07:08:46 GET /healthz -> 503 (from 10.244.0.1:49014)
+2026/09/19 07:08:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:08:51 GET /healthz -> 503 (from 10.244.0.1:34138)
+2026/09/19 07:08:56 GET /healthz -> 503 (from 10.244.0.1:34142)
+2026/09/19 07:09:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:09:01 GET /healthz -> 503 (from 10.244.0.1:35588)
+2026/09/19 07:09:06 GET /healthz -> 503 (from 10.244.0.1:35600)
+2026/09/19 07:09:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:09:11 GET /healthz -> 503 (from 10.244.0.1:51416)
+2026/09/19 07:09:16 GET /healthz -> 503 (from 10.244.0.1:51432)
+2026/09/19 07:09:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:09:21 GET /healthz -> 503 (from 10.244.0.1:33090)
+2026/09/19 07:09:26 GET /healthz -> 503 (from 10.244.0.1:33100)
+2026/09/19 07:09:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:09:31 GET /healthz -> 503 (from 10.244.0.1:33902)
+2026/09/19 07:09:36 GET /healthz -> 503 (from 10.244.0.1:33914)
+2026/09/19 07:09:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:09:41 GET /healthz -> 503 (from 10.244.0.1:50302)
+2026/09/19 07:09:46 GET /healthz -> 503 (from 10.244.0.1:50314)
+2026/09/19 07:09:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:09:51 GET /healthz -> 503 (from 10.244.0.1:33614)
+2026/09/19 07:09:56 GET /healthz -> 503 (from 10.244.0.1:33618)
+2026/09/19 07:10:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:01 GET /healthz -> 503 (from 10.244.0.1:34026)
+2026/09/19 07:10:06 GET /healthz -> 503 (from 10.244.0.1:34040)
+2026/09/19 07:10:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:11 GET /healthz -> 503 (from 10.244.0.1:38210)
+2026/09/19 07:10:16 GET /healthz -> 503 (from 10.244.0.1:38214)
+2026/09/19 07:10:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:21 GET /healthz -> 503 (from 10.244.0.1:36270)
+2026/09/19 07:10:26 GET /healthz -> 503 (from 10.244.0.1:36278)
+2026/09/19 07:10:29 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:29 GET /healthz -> 503 (from 10.244.0.1:36282)
+2026/09/19 07:10:34 GET /healthz -> 503 (from 10.244.0.1:33268)
+2026/09/19 07:10:39 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:39 GET /healthz -> 503 (from 10.244.0.1:33284)
+2026/09/19 07:10:44 GET /healthz -> 503 (from 10.244.0.1:39250)
+2026/09/19 07:10:49 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:49 GET /healthz -> 503 (from 10.244.0.1:39256)
+2026/09/19 07:10:54 GET /healthz -> 503 (from 10.244.0.1:44896)
+2026/09/19 07:10:59 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:10:59 GET /healthz -> 503 (from 10.244.0.1:44898)
+2026/09/19 07:11:04 GET /healthz -> 503 (from 10.244.0.1:43938)
+2026/09/19 07:11:09 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:11:09 GET /healthz -> 503 (from 10.244.0.1:43954)
+2026/09/19 07:11:14 GET /healthz -> 503 (from 10.244.0.1:44616)
+2026/09/19 07:11:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:11:19 GET /healthz -> 503 (from 10.244.0.1:44630)
+2026/09/19 07:11:24 GET /healthz -> 503 (from 10.244.0.1:40156)
+2026/09/19 07:11:29 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:11:29 GET /healthz -> 503 (from 10.244.0.1:40168)
+2026/09/19 07:11:34 GET /healthz -> 503 (from 10.244.0.1:52536)
+2026/09/19 07:11:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:11:35 GET /healthz -> 503 (from 10.244.0.1:52548)
+2026/09/19 07:11:40 GET /healthz -> 503 (from 10.244.0.1:52558)
+2026/09/19 07:11:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:11:45 GET /healthz -> 503 (from 10.244.0.1:58016)
+2026/09/19 07:11:50 GET /healthz -> 503 (from 10.244.0.1:58032)
+2026/09/19 07:11:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:11:55 GET /healthz -> 503 (from 10.244.0.1:43458)
+2026/09/19 07:12:00 GET /healthz -> 503 (from 10.244.0.1:43462)
+2026/09/19 07:12:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:12:05 GET /healthz -> 503 (from 10.244.0.1:56674)
+2026/09/19 07:12:10 GET /healthz -> 503 (from 10.244.0.1:56686)
+2026/09/19 07:12:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:12:15 GET /healthz -> 503 (from 10.244.0.1:33290)
+2026/09/19 07:12:20 GET /healthz -> 503 (from 10.244.0.1:33304)
+2026/09/19 07:12:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:12:25 GET /healthz -> 503 (from 10.244.0.1:43466)
+2026/09/19 07:12:30 GET /healthz -> 503 (from 10.244.0.1:43470)
+2026/09/19 07:12:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:12:35 GET /healthz -> 503 (from 10.244.0.1:39446)
+2026/09/19 07:12:40 GET /healthz -> 503 (from 10.244.0.1:39456)
+2026/09/19 07:12:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:12:45 GET /healthz -> 503 (from 10.244.0.1:48366)
+2026/09/19 07:12:50 GET /healthz -> 503 (from 10.244.0.1:48370)
+2026/09/19 07:12:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:12:55 GET /healthz -> 503 (from 10.244.0.1:44640)
+2026/09/19 07:13:00 GET /healthz -> 503 (from 10.244.0.1:44644)
+2026/09/19 07:13:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:13:05 GET /healthz -> 503 (from 10.244.0.1:59228)
+2026/09/19 07:13:10 GET /healthz -> 503 (from 10.244.0.1:59230)
+2026/09/19 07:13:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:13:15 GET /healthz -> 503 (from 10.244.0.1:39256)
+2026/09/19 07:13:20 GET /healthz -> 503 (from 10.244.0.1:39264)
+2026/09/19 07:13:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:13:25 GET /healthz -> 503 (from 10.244.0.1:36318)
+2026/09/19 07:13:30 GET /healthz -> 503 (from 10.244.0.1:36330)
+2026/09/19 07:13:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:13:35 GET /healthz -> 503 (from 10.244.0.1:40746)
+2026/09/19 07:13:40 GET /healthz -> 503 (from 10.244.0.1:40752)
+2026/09/19 07:13:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:13:45 GET /healthz -> 503 (from 10.244.0.1:44500)
+2026/09/19 07:13:50 GET /healthz -> 503 (from 10.244.0.1:44516)
+2026/09/19 07:13:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:13:55 GET /healthz -> 503 (from 10.244.0.1:41968)
+2026/09/19 07:14:00 GET /healthz -> 503 (from 10.244.0.1:41976)
+2026/09/19 07:14:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:14:05 GET /healthz -> 503 (from 10.244.0.1:60962)
+2026/09/19 07:14:07 GET /healthz -> 503 (from 10.244.0.1:60966)
+2026/09/19 07:14:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:14:12 GET /healthz -> 503 (from 10.244.0.1:53468)
+2026/09/19 07:14:17 GET /healthz -> 503 (from 10.244.0.1:53476)
+2026/09/19 07:14:22 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:14:22 GET /healthz -> 503 (from 10.244.0.1:47046)
+2026/09/19 07:14:27 GET /healthz -> 503 (from 10.244.0.1:47060)
+2026/09/19 07:14:32 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:14:32 GET /healthz -> 503 (from 10.244.0.1:44942)
+2026/09/19 07:14:37 GET /healthz -> 503 (from 10.244.0.1:44952)
+2026/09/19 07:14:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:14:42 GET /healthz -> 503 (from 10.244.0.1:36186)
+2026/09/19 07:14:47 GET /healthz -> 503 (from 10.244.0.1:36190)
+2026/09/19 07:14:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:14:52 GET /healthz -> 503 (from 10.244.0.1:36248)
+2026/09/19 07:14:57 GET /healthz -> 503 (from 10.244.0.1:36256)
+2026/09/19 07:15:02 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:15:02 GET /healthz -> 503 (from 10.244.0.1:43938)
+2026/09/19 07:15:07 GET /healthz -> 503 (from 10.244.0.1:43940)
+2026/09/19 07:15:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:15:12 GET /healthz -> 503 (from 10.244.0.1:34732)
+2026/09/19 07:15:16 GET /healthz -> 503 (from 10.244.0.1:34740)
+2026/09/19 07:15:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:15:21 GET /healthz -> 503 (from 10.244.0.1:55426)
+2026/09/19 07:15:26 GET /healthz -> 503 (from 10.244.0.1:55428)
+2026/09/19 07:15:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:15:31 GET /healthz -> 503 (from 10.244.0.1:55122)
+2026/09/19 07:15:36 GET /healthz -> 503 (from 10.244.0.1:55132)
+2026/09/19 07:15:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:15:41 GET /healthz -> 503 (from 10.244.0.1:40924)
+2026/09/19 07:15:46 GET /healthz -> 503 (from 10.244.0.1:40926)
+2026/09/19 07:15:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:15:51 GET /healthz -> 503 (from 10.244.0.1:42616)
+2026/09/19 07:15:56 GET /healthz -> 503 (from 10.244.0.1:42622)
+2026/09/19 07:16:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:16:01 GET /healthz -> 503 (from 10.244.0.1:50302)
+2026/09/19 07:16:06 GET /healthz -> 503 (from 10.244.0.1:50304)
+2026/09/19 07:16:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:16:11 GET /healthz -> 503 (from 10.244.0.1:53754)
+2026/09/19 07:16:16 GET /healthz -> 503 (from 10.244.0.1:53760)
+2026/09/19 07:16:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:16:21 GET /healthz -> 503 (from 10.244.0.1:40582)
+2026/09/19 07:16:26 GET /healthz -> 503 (from 10.244.0.1:40594)
+2026/09/19 07:16:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:16:31 GET /healthz -> 503 (from 10.244.0.1:43366)
+2026/09/19 07:16:36 GET /healthz -> 503 (from 10.244.0.1:43368)
+2026/09/19 07:16:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:16:41 GET /healthz -> 503 (from 10.244.0.1:48552)
+2026/09/19 07:16:46 GET /healthz -> 503 (from 10.244.0.1:48564)
+2026/09/19 07:16:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:16:51 GET /healthz -> 503 (from 10.244.0.1:40370)
+2026/09/19 07:16:56 GET /healthz -> 503 (from 10.244.0.1:40386)
+2026/09/19 07:17:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:01 GET /healthz -> 503 (from 10.244.0.1:56422)
+2026/09/19 07:17:06 GET /healthz -> 503 (from 10.244.0.1:56438)
+2026/09/19 07:17:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:11 GET /healthz -> 503 (from 10.244.0.1:37974)
+2026/09/19 07:17:16 GET /healthz -> 503 (from 10.244.0.1:37976)
+2026/09/19 07:17:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:21 GET /healthz -> 503 (from 10.244.0.1:43408)
+2026/09/19 07:17:26 GET /healthz -> 503 (from 10.244.0.1:43414)
+2026/09/19 07:17:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:31 GET /healthz -> 503 (from 10.244.0.1:47602)
+2026/09/19 07:17:36 GET /healthz -> 503 (from 10.244.0.1:47606)
+2026/09/19 07:17:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:41 GET /healthz -> 503 (from 10.244.0.1:47602)
+2026/09/19 07:17:46 GET /healthz -> 503 (from 10.244.0.1:47610)
+2026/09/19 07:17:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:47 GET /healthz -> 503 (from 10.244.0.1:47620)
+2026/09/19 07:17:52 GET /healthz -> 503 (from 10.244.0.1:59460)
+2026/09/19 07:17:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:17:57 GET /healthz -> 503 (from 10.244.0.1:59466)
+2026/09/19 07:18:02 GET /healthz -> 503 (from 10.244.0.1:54280)
+2026/09/19 07:18:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:18:07 GET /healthz -> 503 (from 10.244.0.1:54284)
+2026/09/19 07:18:12 GET /healthz -> 503 (from 10.244.0.1:37642)
+2026/09/19 07:18:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:18:17 GET /healthz -> 503 (from 10.244.0.1:37648)
+2026/09/19 07:18:22 GET /healthz -> 503 (from 10.244.0.1:32866)
+2026/09/19 07:18:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:18:27 GET /healthz -> 503 (from 10.244.0.1:32872)
+2026/09/19 07:18:32 GET /healthz -> 503 (from 10.244.0.1:40518)
+2026/09/19 07:18:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:18:37 GET /healthz -> 503 (from 10.244.0.1:40534)
+2026/09/19 07:18:42 GET /healthz -> 503 (from 10.244.0.1:43432)
+2026/09/19 07:18:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:18:47 GET /healthz -> 503 (from 10.244.0.1:43448)
+2026/09/19 07:18:52 GET /healthz -> 503 (from 10.244.0.1:50754)
+2026/09/19 07:18:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:18:57 GET /healthz -> 503 (from 10.244.0.1:50770)
+2026/09/19 07:19:02 GET /healthz -> 503 (from 10.244.0.1:54080)
+2026/09/19 07:19:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:19:07 GET /healthz -> 503 (from 10.244.0.1:54092)
+2026/09/19 07:19:12 GET /healthz -> 503 (from 10.244.0.1:44702)
+2026/09/19 07:19:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:19:17 GET /healthz -> 503 (from 10.244.0.1:44706)
+2026/09/19 07:19:22 GET /healthz -> 503 (from 10.244.0.1:33128)
+2026/09/19 07:19:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:19:27 GET /healthz -> 503 (from 10.244.0.1:33132)
+2026/09/19 07:19:32 GET /healthz -> 503 (from 10.244.0.1:58440)
+2026/09/19 07:19:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:19:37 GET /healthz -> 503 (from 10.244.0.1:58448)
+2026/09/19 07:19:42 GET /healthz -> 503 (from 10.244.0.1:53254)
+2026/09/19 07:19:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:19:47 GET /healthz -> 503 (from 10.244.0.1:53262)
+2026/09/19 07:19:52 GET /healthz -> 503 (from 10.244.0.1:59010)
+2026/09/19 07:19:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:19:57 GET /healthz -> 503 (from 10.244.0.1:59018)
+2026/09/19 07:20:02 GET /healthz -> 503 (from 10.244.0.1:37190)
+2026/09/19 07:20:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:20:07 GET /healthz -> 503 (from 10.244.0.1:37206)
+2026/09/19 07:20:12 GET /healthz -> 503 (from 10.244.0.1:57864)
+2026/09/19 07:20:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:20:17 GET /healthz -> 503 (from 10.244.0.1:57868)
+2026/09/19 07:20:22 GET /healthz -> 503 (from 10.244.0.1:45284)
+2026/09/19 07:20:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:20:26 GET /healthz -> 503 (from 10.244.0.1:45292)
+2026/09/19 07:20:31 GET /healthz -> 503 (from 10.244.0.1:44738)
+2026/09/19 07:20:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:20:36 GET /healthz -> 503 (from 10.244.0.1:44746)
+2026/09/19 07:20:41 GET /healthz -> 503 (from 10.244.0.1:50866)
+2026/09/19 07:20:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:20:46 GET /healthz -> 503 (from 10.244.0.1:50874)
+2026/09/19 07:20:51 GET /healthz -> 503 (from 10.244.0.1:51866)
+2026/09/19 07:20:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:20:56 GET /healthz -> 503 (from 10.244.0.1:51880)
+2026/09/19 07:21:01 GET /healthz -> 503 (from 10.244.0.1:52102)
+2026/09/19 07:21:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:21:06 GET /healthz -> 503 (from 10.244.0.1:52118)
+2026/09/19 07:21:11 GET /healthz -> 503 (from 10.244.0.1:59452)
+2026/09/19 07:21:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:21:16 GET /healthz -> 503 (from 10.244.0.1:59460)
+2026/09/19 07:21:21 GET /healthz -> 503 (from 10.244.0.1:41312)
+2026/09/19 07:21:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:21:26 GET /healthz -> 503 (from 10.244.0.1:41314)
+2026/09/19 07:21:31 GET /healthz -> 503 (from 10.244.0.1:49850)
+2026/09/19 07:21:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:21:36 GET /healthz -> 503 (from 10.244.0.1:49864)
+2026/09/19 07:21:41 GET /healthz -> 503 (from 10.244.0.1:48134)
+2026/09/19 07:21:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:21:46 GET /healthz -> 503 (from 10.244.0.1:48140)
+2026/09/19 07:21:50 GET /healthz -> 503 (from 10.244.0.1:48142)
+2026/09/19 07:21:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:21:55 GET /healthz -> 503 (from 10.244.0.1:33490)
+2026/09/19 07:22:00 GET /healthz -> 503 (from 10.244.0.1:33500)
+2026/09/19 07:22:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:22:05 GET /healthz -> 503 (from 10.244.0.1:35356)
+2026/09/19 07:22:10 GET /healthz -> 503 (from 10.244.0.1:35362)
+2026/09/19 07:22:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:22:15 GET /healthz -> 503 (from 10.244.0.1:59190)
+2026/09/19 07:22:20 GET /healthz -> 503 (from 10.244.0.1:59200)
+2026/09/19 07:22:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:22:25 GET /healthz -> 503 (from 10.244.0.1:53252)
+2026/09/19 07:22:30 GET /healthz -> 503 (from 10.244.0.1:53258)
+2026/09/19 07:22:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:22:35 GET /healthz -> 503 (from 10.244.0.1:53132)
+2026/09/19 07:22:40 GET /healthz -> 503 (from 10.244.0.1:53144)
+2026/09/19 07:22:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:22:45 GET /healthz -> 503 (from 10.244.0.1:46888)
+2026/09/19 07:22:50 GET /healthz -> 503 (from 10.244.0.1:46902)
+2026/09/19 07:22:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:22:55 GET /healthz -> 503 (from 10.244.0.1:50262)
+2026/09/19 07:23:00 GET /healthz -> 503 (from 10.244.0.1:50272)
+2026/09/19 07:23:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:23:05 GET /healthz -> 503 (from 10.244.0.1:51234)
+2026/09/19 07:23:10 GET /healthz -> 503 (from 10.244.0.1:51240)
+2026/09/19 07:23:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:23:15 GET /healthz -> 503 (from 10.244.0.1:56598)
+2026/09/19 07:23:18 GET /healthz -> 503 (from 10.244.0.1:56600)
+2026/09/19 07:23:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:23:23 GET /healthz -> 503 (from 10.244.0.1:45040)
+2026/09/19 07:23:28 GET /healthz -> 503 (from 10.244.0.1:45044)
+2026/09/19 07:23:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:23:33 GET /healthz -> 503 (from 10.244.0.1:50344)
+2026/09/19 07:23:38 GET /healthz -> 503 (from 10.244.0.1:50346)
+2026/09/19 07:23:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:23:43 GET /healthz -> 503 (from 10.244.0.1:52170)
+2026/09/19 07:23:48 GET /healthz -> 503 (from 10.244.0.1:52180)
+2026/09/19 07:23:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:23:53 GET /healthz -> 503 (from 10.244.0.1:59670)
+2026/09/19 07:23:58 GET /healthz -> 503 (from 10.244.0.1:59674)
+2026/09/19 07:24:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:24:03 GET /healthz -> 503 (from 10.244.0.1:55906)
+2026/09/19 07:24:08 GET /healthz -> 503 (from 10.244.0.1:55922)
+2026/09/19 07:24:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:24:13 GET /healthz -> 503 (from 10.244.0.1:36570)
+2026/09/19 07:24:18 GET /healthz -> 503 (from 10.244.0.1:36584)
+2026/09/19 07:24:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:24:23 GET /healthz -> 503 (from 10.244.0.1:40074)
+2026/09/19 07:24:28 GET /healthz -> 503 (from 10.244.0.1:40086)
+2026/09/19 07:24:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:24:33 GET /healthz -> 503 (from 10.244.0.1:35658)
+2026/09/19 07:24:38 GET /healthz -> 503 (from 10.244.0.1:35662)
+2026/09/19 07:24:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:24:43 GET /healthz -> 503 (from 10.244.0.1:39770)
+2026/09/19 07:24:48 GET /healthz -> 503 (from 10.244.0.1:39786)
+2026/09/19 07:24:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:24:53 GET /healthz -> 503 (from 10.244.0.1:33070)
+2026/09/19 07:24:58 GET /healthz -> 503 (from 10.244.0.1:33086)
+2026/09/19 07:25:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:25:03 GET /healthz -> 503 (from 10.244.0.1:53054)
+2026/09/19 07:25:08 GET /healthz -> 503 (from 10.244.0.1:53064)
+2026/09/19 07:25:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:25:13 GET /healthz -> 503 (from 10.244.0.1:51826)
+2026/09/19 07:25:18 GET /healthz -> 503 (from 10.244.0.1:51842)
+2026/09/19 07:25:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:25:23 GET /healthz -> 503 (from 10.244.0.1:60520)
+2026/09/19 07:25:28 GET /healthz -> 503 (from 10.244.0.1:60534)
+2026/09/19 07:25:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:25:33 GET /healthz -> 503 (from 10.244.0.1:37976)
+2026/09/19 07:25:38 GET /healthz -> 503 (from 10.244.0.1:37988)
+2026/09/19 07:25:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:25:40 GET /healthz -> 503 (from 10.244.0.1:37990)
+2026/09/19 07:25:45 GET /healthz -> 503 (from 10.244.0.1:52206)
+2026/09/19 07:25:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:25:50 GET /healthz -> 503 (from 10.244.0.1:52222)
+2026/09/19 07:25:55 GET /healthz -> 503 (from 10.244.0.1:57914)
+2026/09/19 07:26:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:00 GET /healthz -> 503 (from 10.244.0.1:57930)
+2026/09/19 07:26:05 GET /healthz -> 503 (from 10.244.0.1:40150)
+2026/09/19 07:26:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:10 GET /healthz -> 503 (from 10.244.0.1:40162)
+2026/09/19 07:26:15 GET /healthz -> 503 (from 10.244.0.1:42012)
+2026/09/19 07:26:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:20 GET /healthz -> 503 (from 10.244.0.1:42020)
+2026/09/19 07:26:25 GET /healthz -> 503 (from 10.244.0.1:44200)
+2026/09/19 07:26:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:30 GET /healthz -> 503 (from 10.244.0.1:44202)
+2026/09/19 07:26:35 GET /healthz -> 503 (from 10.244.0.1:59352)
+2026/09/19 07:26:39 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:39 GET /healthz -> 503 (from 10.244.0.1:59360)
+2026/09/19 07:26:44 GET /healthz -> 503 (from 10.244.0.1:57570)
+2026/09/19 07:26:49 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:49 GET /healthz -> 503 (from 10.244.0.1:57576)
+2026/09/19 07:26:54 GET /healthz -> 503 (from 10.244.0.1:46956)
+2026/09/19 07:26:59 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:26:59 GET /healthz -> 503 (from 10.244.0.1:46964)
+2026/09/19 07:27:02 GET /healthz -> 503 (from 10.244.0.1:42028)
+2026/09/19 07:27:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:27:07 GET /healthz -> 503 (from 10.244.0.1:42040)
+2026/09/19 07:27:12 GET /healthz -> 503 (from 10.244.0.1:37600)
+2026/09/19 07:27:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:27:17 GET /healthz -> 503 (from 10.244.0.1:37610)
+2026/09/19 07:27:22 GET /healthz -> 503 (from 10.244.0.1:53040)
+2026/09/19 07:27:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:27:27 GET /healthz -> 503 (from 10.244.0.1:53048)
+2026/09/19 07:27:32 GET /healthz -> 503 (from 10.244.0.1:45956)
+2026/09/19 07:27:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:27:37 GET /healthz -> 503 (from 10.244.0.1:45962)
+2026/09/19 07:27:42 GET /healthz -> 503 (from 10.244.0.1:44790)
+2026/09/19 07:27:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:27:47 GET /healthz -> 503 (from 10.244.0.1:44796)
+2026/09/19 07:27:52 GET /healthz -> 503 (from 10.244.0.1:45262)
+2026/09/19 07:27:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:27:57 GET /healthz -> 503 (from 10.244.0.1:45274)
+2026/09/19 07:28:02 GET /healthz -> 503 (from 10.244.0.1:40718)
+2026/09/19 07:28:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:28:07 GET /healthz -> 503 (from 10.244.0.1:40730)
+2026/09/19 07:28:09 GET /healthz -> 503 (from 10.244.0.1:40746)
+2026/09/19 07:28:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:28:14 GET /healthz -> 503 (from 10.244.0.1:41106)
+2026/09/19 07:28:19 GET /healthz -> 503 (from 10.244.0.1:41116)
+2026/09/19 07:28:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:28:24 GET /healthz -> 503 (from 10.244.0.1:57568)
+2026/09/19 07:28:29 GET /healthz -> 503 (from 10.244.0.1:57578)
+2026/09/19 07:28:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:28:34 GET /healthz -> 503 (from 10.244.0.1:58198)
+2026/09/19 07:28:39 GET /healthz -> 503 (from 10.244.0.1:58212)
+2026/09/19 07:28:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:28:44 GET /healthz -> 503 (from 10.244.0.1:43864)
+2026/09/19 07:28:49 GET /healthz -> 503 (from 10.244.0.1:43866)
+2026/09/19 07:28:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:28:54 GET /healthz -> 503 (from 10.244.0.1:33122)
+2026/09/19 07:28:59 GET /healthz -> 503 (from 10.244.0.1:33130)
+2026/09/19 07:29:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:29:04 GET /healthz -> 503 (from 10.244.0.1:53832)
+2026/09/19 07:29:09 GET /healthz -> 503 (from 10.244.0.1:53842)
+2026/09/19 07:29:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:29:14 GET /healthz -> 503 (from 10.244.0.1:37106)
+2026/09/19 07:29:19 GET /healthz -> 503 (from 10.244.0.1:37122)
+2026/09/19 07:29:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:29:24 GET /healthz -> 503 (from 10.244.0.1:57762)
+2026/09/19 07:29:26 GET /healthz -> 503 (from 10.244.0.1:57778)
+2026/09/19 07:29:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:29:31 GET /healthz -> 503 (from 10.244.0.1:58480)
+2026/09/19 07:29:36 GET /healthz -> 503 (from 10.244.0.1:58486)
+2026/09/19 07:29:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:29:41 GET /healthz -> 503 (from 10.244.0.1:51930)
+2026/09/19 07:29:46 GET /healthz -> 503 (from 10.244.0.1:51944)
+2026/09/19 07:29:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:29:51 GET /healthz -> 503 (from 10.244.0.1:45800)
+2026/09/19 07:29:56 GET /healthz -> 503 (from 10.244.0.1:45810)
+2026/09/19 07:30:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:01 GET /healthz -> 503 (from 10.244.0.1:52980)
+2026/09/19 07:30:06 GET /healthz -> 503 (from 10.244.0.1:52996)
+2026/09/19 07:30:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:11 GET /healthz -> 503 (from 10.244.0.1:46934)
+2026/09/19 07:30:16 GET /healthz -> 503 (from 10.244.0.1:46938)
+2026/09/19 07:30:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:21 GET /healthz -> 503 (from 10.244.0.1:34526)
+2026/09/19 07:30:26 GET /healthz -> 503 (from 10.244.0.1:34538)
+2026/09/19 07:30:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:31 GET /healthz -> 503 (from 10.244.0.1:60618)
+2026/09/19 07:30:36 GET /healthz -> 503 (from 10.244.0.1:60620)
+2026/09/19 07:30:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:41 GET /healthz -> 503 (from 10.244.0.1:49688)
+2026/09/19 07:30:43 GET /healthz -> 503 (from 10.244.0.1:49698)
+2026/09/19 07:30:48 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:48 GET /healthz -> 503 (from 10.244.0.1:49706)
+2026/09/19 07:30:53 GET /healthz -> 503 (from 10.244.0.1:56616)
+2026/09/19 07:30:58 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:30:58 GET /healthz -> 503 (from 10.244.0.1:56620)
+2026/09/19 07:31:03 GET /healthz -> 503 (from 10.244.0.1:50324)
+2026/09/19 07:31:08 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:31:08 GET /healthz -> 503 (from 10.244.0.1:50338)
+2026/09/19 07:31:13 GET /healthz -> 503 (from 10.244.0.1:57824)
+2026/09/19 07:31:18 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:31:18 GET /healthz -> 503 (from 10.244.0.1:57834)
+2026/09/19 07:31:23 GET /healthz -> 503 (from 10.244.0.1:52176)
+2026/09/19 07:31:28 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:31:28 GET /healthz -> 503 (from 10.244.0.1:52190)
+2026/09/19 07:31:33 GET /healthz -> 503 (from 10.244.0.1:58952)
+2026/09/19 07:31:38 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:31:38 GET /healthz -> 503 (from 10.244.0.1:58964)
+2026/09/19 07:31:43 GET /healthz -> 503 (from 10.244.0.1:41142)
+2026/09/19 07:31:48 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:31:48 GET /healthz -> 503 (from 10.244.0.1:41148)
+2026/09/19 07:31:53 GET /healthz -> 503 (from 10.244.0.1:35078)
+2026/09/19 07:31:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:31:57 GET /healthz -> 503 (from 10.244.0.1:35088)
+2026/09/19 07:32:02 GET /healthz -> 503 (from 10.244.0.1:54128)
+2026/09/19 07:32:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:32:07 GET /healthz -> 503 (from 10.244.0.1:54130)
+2026/09/19 07:32:12 GET /healthz -> 503 (from 10.244.0.1:36254)
+2026/09/19 07:32:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:32:17 GET /healthz -> 503 (from 10.244.0.1:36270)
+2026/09/19 07:32:22 GET /healthz -> 503 (from 10.244.0.1:47042)
+2026/09/19 07:32:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:32:27 GET /healthz -> 503 (from 10.244.0.1:47056)
+2026/09/19 07:32:32 GET /healthz -> 503 (from 10.244.0.1:51292)
+2026/09/19 07:32:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:32:37 GET /healthz -> 503 (from 10.244.0.1:51302)
+2026/09/19 07:32:42 GET /healthz -> 503 (from 10.244.0.1:38158)
+2026/09/19 07:32:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:32:47 GET /healthz -> 503 (from 10.244.0.1:38164)
+2026/09/19 07:32:52 GET /healthz -> 503 (from 10.244.0.1:42700)
+2026/09/19 07:32:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:32:57 GET /healthz -> 503 (from 10.244.0.1:42716)
+2026/09/19 07:33:02 GET /healthz -> 503 (from 10.244.0.1:44248)
+2026/09/19 07:33:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:33:07 GET /healthz -> 503 (from 10.244.0.1:44262)
+2026/09/19 07:33:11 GET /healthz -> 503 (from 10.244.0.1:43618)
+2026/09/19 07:33:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:33:16 GET /healthz -> 503 (from 10.244.0.1:43630)
+2026/09/19 07:33:21 GET /healthz -> 503 (from 10.244.0.1:52708)
+2026/09/19 07:33:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:33:26 GET /healthz -> 503 (from 10.244.0.1:52722)
+2026/09/19 07:33:31 GET /healthz -> 503 (from 10.244.0.1:55172)
+2026/09/19 07:33:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:33:36 GET /healthz -> 503 (from 10.244.0.1:55174)
+2026/09/19 07:33:41 GET /healthz -> 503 (from 10.244.0.1:44798)
+2026/09/19 07:33:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:33:46 GET /healthz -> 503 (from 10.244.0.1:44808)
+2026/09/19 07:33:51 GET /healthz -> 503 (from 10.244.0.1:45934)
+2026/09/19 07:33:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:33:56 GET /healthz -> 503 (from 10.244.0.1:45944)
+2026/09/19 07:34:01 GET /healthz -> 503 (from 10.244.0.1:56904)
+2026/09/19 07:34:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:34:06 GET /healthz -> 503 (from 10.244.0.1:56912)
+2026/09/19 07:34:11 GET /healthz -> 503 (from 10.244.0.1:55342)
+2026/09/19 07:34:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:34:16 GET /healthz -> 503 (from 10.244.0.1:55354)
+2026/09/19 07:34:21 GET /healthz -> 503 (from 10.244.0.1:56502)
+2026/09/19 07:34:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:34:26 GET /healthz -> 503 (from 10.244.0.1:56508)
+2026/09/19 07:34:31 GET /healthz -> 503 (from 10.244.0.1:56686)
+2026/09/19 07:34:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:34:36 GET /healthz -> 503 (from 10.244.0.1:56690)
+2026/09/19 07:34:41 GET /healthz -> 503 (from 10.244.0.1:54754)
+2026/09/19 07:34:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:34:46 GET /healthz -> 503 (from 10.244.0.1:54760)
+2026/09/19 07:34:51 GET /healthz -> 503 (from 10.244.0.1:51562)
+2026/09/19 07:34:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:34:56 GET /healthz -> 503 (from 10.244.0.1:51574)
+2026/09/19 07:35:01 GET /healthz -> 503 (from 10.244.0.1:58364)
+2026/09/19 07:35:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:35:06 GET /healthz -> 503 (from 10.244.0.1:58376)
+2026/09/19 07:35:11 GET /healthz -> 503 (from 10.244.0.1:47666)
+2026/09/19 07:35:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:35:16 GET /healthz -> 503 (from 10.244.0.1:47680)
+2026/09/19 07:35:21 GET /healthz -> 503 (from 10.244.0.1:47166)
+2026/09/19 07:35:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:35:26 GET /healthz -> 503 (from 10.244.0.1:47178)
+2026/09/19 07:35:31 GET /healthz -> 503 (from 10.244.0.1:50296)
+2026/09/19 07:35:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:35:36 GET /healthz -> 503 (from 10.244.0.1:50298)
+2026/09/19 07:35:37 GET /healthz -> 503 (from 10.244.0.1:50308)
+2026/09/19 07:35:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:35:42 GET /healthz -> 503 (from 10.244.0.1:35058)
+2026/09/19 07:35:47 GET /healthz -> 503 (from 10.244.0.1:35074)
+2026/09/19 07:35:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:35:52 GET /healthz -> 503 (from 10.244.0.1:54316)
+2026/09/19 07:35:57 GET /healthz -> 503 (from 10.244.0.1:54320)
+2026/09/19 07:36:02 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:36:02 GET /healthz -> 503 (from 10.244.0.1:42956)
+2026/09/19 07:36:07 GET /healthz -> 503 (from 10.244.0.1:42962)
+2026/09/19 07:36:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:36:12 GET /healthz -> 503 (from 10.244.0.1:47684)
+2026/09/19 07:36:17 GET /healthz -> 503 (from 10.244.0.1:47694)
+2026/09/19 07:36:22 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:36:22 GET /healthz -> 503 (from 10.244.0.1:45160)
+2026/09/19 07:36:27 GET /healthz -> 503 (from 10.244.0.1:45162)
+2026/09/19 07:36:32 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:36:32 GET /healthz -> 503 (from 10.244.0.1:41014)
+2026/09/19 07:36:37 GET /healthz -> 503 (from 10.244.0.1:41030)
+2026/09/19 07:36:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:36:42 GET /healthz -> 503 (from 10.244.0.1:50216)
+2026/09/19 07:36:47 GET /healthz -> 503 (from 10.244.0.1:50218)
+2026/09/19 07:36:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:36:52 GET /healthz -> 503 (from 10.244.0.1:42082)
+2026/09/19 07:36:57 GET /healthz -> 503 (from 10.244.0.1:42094)
+2026/09/19 07:37:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:37:01 GET /healthz -> 503 (from 10.244.0.1:52922)
+2026/09/19 07:37:06 GET /healthz -> 503 (from 10.244.0.1:52926)
+2026/09/19 07:37:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:37:11 GET /healthz -> 503 (from 10.244.0.1:50628)
+2026/09/19 07:37:16 GET /healthz -> 503 (from 10.244.0.1:50632)
+2026/09/19 07:37:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:37:21 GET /healthz -> 503 (from 10.244.0.1:52030)
+2026/09/19 07:37:26 GET /healthz -> 503 (from 10.244.0.1:52034)
+2026/09/19 07:37:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:37:31 GET /healthz -> 503 (from 10.244.0.1:45838)
+2026/09/19 07:37:36 GET /healthz -> 503 (from 10.244.0.1:45852)
+2026/09/19 07:37:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:37:41 GET /healthz -> 503 (from 10.244.0.1:48878)
+2026/09/19 07:37:46 GET /healthz -> 503 (from 10.244.0.1:48890)
+2026/09/19 07:37:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:37:51 GET /healthz -> 503 (from 10.244.0.1:57686)
+2026/09/19 07:37:56 GET /healthz -> 503 (from 10.244.0.1:57692)
+2026/09/19 07:38:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:38:01 GET /healthz -> 503 (from 10.244.0.1:36030)
+2026/09/19 07:38:06 GET /healthz -> 503 (from 10.244.0.1:36038)
+2026/09/19 07:38:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:38:11 GET /healthz -> 503 (from 10.244.0.1:43192)
+2026/09/19 07:38:16 GET /healthz -> 503 (from 10.244.0.1:43194)
+2026/09/19 07:38:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:38:21 GET /healthz -> 503 (from 10.244.0.1:46412)
+2026/09/19 07:38:26 GET /healthz -> 503 (from 10.244.0.1:46418)
+2026/09/19 07:38:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:38:31 GET /healthz -> 503 (from 10.244.0.1:40160)
+2026/09/19 07:38:36 GET /healthz -> 503 (from 10.244.0.1:40170)
+2026/09/19 07:38:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:38:41 GET /healthz -> 503 (from 10.244.0.1:50184)
+2026/09/19 07:38:46 GET /healthz -> 503 (from 10.244.0.1:50196)
+2026/09/19 07:38:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:38:51 GET /healthz -> 503 (from 10.244.0.1:39104)
+2026/09/19 07:38:56 GET /healthz -> 503 (from 10.244.0.1:39118)
+2026/09/19 07:39:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:01 GET /healthz -> 503 (from 10.244.0.1:40362)
+2026/09/19 07:39:06 GET /healthz -> 503 (from 10.244.0.1:40366)
+2026/09/19 07:39:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:11 GET /healthz -> 503 (from 10.244.0.1:35628)
+2026/09/19 07:39:16 GET /healthz -> 503 (from 10.244.0.1:35644)
+2026/09/19 07:39:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:21 GET /healthz -> 503 (from 10.244.0.1:35634)
+2026/09/19 07:39:26 GET /healthz -> 503 (from 10.244.0.1:35636)
+2026/09/19 07:39:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:31 GET /healthz -> 503 (from 10.244.0.1:39896)
+2026/09/19 07:39:31 GET /healthz -> 503 (from 10.244.0.1:39900)
+2026/09/19 07:39:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:36 GET /healthz -> 503 (from 10.244.0.1:39910)
+2026/09/19 07:39:41 GET /healthz -> 503 (from 10.244.0.1:39826)
+2026/09/19 07:39:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:46 GET /healthz -> 503 (from 10.244.0.1:39834)
+2026/09/19 07:39:51 GET /healthz -> 503 (from 10.244.0.1:35812)
+2026/09/19 07:39:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:39:56 GET /healthz -> 503 (from 10.244.0.1:35816)
+2026/09/19 07:40:01 GET /healthz -> 503 (from 10.244.0.1:43366)
+2026/09/19 07:40:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:40:06 GET /healthz -> 503 (from 10.244.0.1:43370)
+2026/09/19 07:40:11 GET /healthz -> 503 (from 10.244.0.1:53212)
+2026/09/19 07:40:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:40:16 GET /healthz -> 503 (from 10.244.0.1:53220)
+2026/09/19 07:40:21 GET /healthz -> 503 (from 10.244.0.1:42156)
+2026/09/19 07:40:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:40:26 GET /healthz -> 503 (from 10.244.0.1:42168)
+2026/09/19 07:40:31 GET /healthz -> 503 (from 10.244.0.1:54202)
+2026/09/19 07:40:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:40:36 GET /healthz -> 503 (from 10.244.0.1:54206)
+2026/09/19 07:40:41 GET /healthz -> 503 (from 10.244.0.1:56464)
+2026/09/19 07:40:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:40:46 GET /healthz -> 503 (from 10.244.0.1:56474)
+2026/09/19 07:40:51 GET /healthz -> 503 (from 10.244.0.1:59988)
+2026/09/19 07:40:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:40:56 GET /healthz -> 503 (from 10.244.0.1:59990)
+2026/09/19 07:41:01 GET /healthz -> 503 (from 10.244.0.1:44154)
+2026/09/19 07:41:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:41:06 GET /healthz -> 503 (from 10.244.0.1:44164)
+2026/09/19 07:41:11 GET /healthz -> 503 (from 10.244.0.1:50948)
+2026/09/19 07:41:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:41:16 GET /healthz -> 503 (from 10.244.0.1:50952)
+2026/09/19 07:41:21 GET /healthz -> 503 (from 10.244.0.1:39010)
+2026/09/19 07:41:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:41:26 GET /healthz -> 503 (from 10.244.0.1:39014)
+2026/09/19 07:41:31 GET /healthz -> 503 (from 10.244.0.1:33190)
+2026/09/19 07:41:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:41:36 GET /healthz -> 503 (from 10.244.0.1:33194)
+2026/09/19 07:41:41 GET /healthz -> 503 (from 10.244.0.1:44844)
+2026/09/19 07:41:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:41:46 GET /healthz -> 503 (from 10.244.0.1:44846)
+2026/09/19 07:41:51 GET /healthz -> 503 (from 10.244.0.1:40492)
+2026/09/19 07:41:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:41:56 GET /healthz -> 503 (from 10.244.0.1:40494)
+2026/09/19 07:42:01 GET /healthz -> 503 (from 10.244.0.1:51184)
+2026/09/19 07:42:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:42:06 GET /healthz -> 503 (from 10.244.0.1:51200)
+2026/09/19 07:42:11 GET /healthz -> 503 (from 10.244.0.1:39216)
+2026/09/19 07:42:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:42:16 GET /healthz -> 503 (from 10.244.0.1:39228)
+2026/09/19 07:42:21 GET /healthz -> 503 (from 10.244.0.1:46064)
+2026/09/19 07:42:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:42:24 GET /healthz -> 503 (from 10.244.0.1:46080)
+2026/09/19 07:42:29 GET /healthz -> 503 (from 10.244.0.1:46082)
+2026/09/19 07:42:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:42:34 GET /healthz -> 503 (from 10.244.0.1:44986)
+2026/09/19 07:42:39 GET /healthz -> 503 (from 10.244.0.1:44992)
+2026/09/19 07:42:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:42:44 GET /healthz -> 503 (from 10.244.0.1:38668)
+2026/09/19 07:42:49 GET /healthz -> 503 (from 10.244.0.1:38670)
+2026/09/19 07:42:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:42:54 GET /healthz -> 503 (from 10.244.0.1:35442)
+2026/09/19 07:42:59 GET /healthz -> 503 (from 10.244.0.1:35450)
+2026/09/19 07:43:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:43:04 GET /healthz -> 503 (from 10.244.0.1:37344)
+2026/09/19 07:43:09 GET /healthz -> 503 (from 10.244.0.1:37358)
+2026/09/19 07:43:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:43:14 GET /healthz -> 503 (from 10.244.0.1:49558)
+2026/09/19 07:43:19 GET /healthz -> 503 (from 10.244.0.1:49574)
+2026/09/19 07:43:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:43:24 GET /healthz -> 503 (from 10.244.0.1:53852)
+2026/09/19 07:43:27 GET /healthz -> 503 (from 10.244.0.1:53864)
+2026/09/19 07:43:32 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:43:32 GET /healthz -> 503 (from 10.244.0.1:60258)
+2026/09/19 07:43:37 GET /healthz -> 503 (from 10.244.0.1:60262)
+2026/09/19 07:43:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:43:42 GET /healthz -> 503 (from 10.244.0.1:57018)
+2026/09/19 07:43:47 GET /healthz -> 503 (from 10.244.0.1:57028)
+2026/09/19 07:43:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:43:52 GET /healthz -> 503 (from 10.244.0.1:55726)
+2026/09/19 07:43:57 GET /healthz -> 503 (from 10.244.0.1:55732)
+2026/09/19 07:44:02 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:44:02 GET /healthz -> 503 (from 10.244.0.1:33266)
+2026/09/19 07:44:07 GET /healthz -> 503 (from 10.244.0.1:33280)
+2026/09/19 07:44:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:44:12 GET /healthz -> 503 (from 10.244.0.1:60894)
+2026/09/19 07:44:17 GET /healthz -> 503 (from 10.244.0.1:60908)
+2026/09/19 07:44:22 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:44:22 GET /healthz -> 503 (from 10.244.0.1:51900)
+2026/09/19 07:44:27 GET /healthz -> 503 (from 10.244.0.1:51906)
+2026/09/19 07:44:32 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:44:32 GET /healthz -> 503 (from 10.244.0.1:55918)
+2026/09/19 07:44:37 GET /healthz -> 503 (from 10.244.0.1:55926)
+2026/09/19 07:44:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:44:42 GET /healthz -> 503 (from 10.244.0.1:51532)
+2026/09/19 07:44:47 GET /healthz -> 503 (from 10.244.0.1:51544)
+2026/09/19 07:44:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:44:52 GET /healthz -> 503 (from 10.244.0.1:49298)
+2026/09/19 07:44:55 GET /healthz -> 503 (from 10.244.0.1:49308)
+2026/09/19 07:45:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:45:00 GET /healthz -> 503 (from 10.244.0.1:36304)
+2026/09/19 07:45:05 GET /healthz -> 503 (from 10.244.0.1:36310)
+2026/09/19 07:45:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:45:10 GET /healthz -> 503 (from 10.244.0.1:57272)
+2026/09/19 07:45:15 GET /healthz -> 503 (from 10.244.0.1:57280)
+2026/09/19 07:45:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:45:20 GET /healthz -> 503 (from 10.244.0.1:35694)
+2026/09/19 07:45:25 GET /healthz -> 503 (from 10.244.0.1:35698)
+2026/09/19 07:45:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:45:30 GET /healthz -> 503 (from 10.244.0.1:59382)
+2026/09/19 07:45:35 GET /healthz -> 503 (from 10.244.0.1:59386)
+2026/09/19 07:45:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:45:40 GET /healthz -> 503 (from 10.244.0.1:56334)
+2026/09/19 07:45:45 GET /healthz -> 503 (from 10.244.0.1:56338)
+2026/09/19 07:45:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:45:50 GET /healthz -> 503 (from 10.244.0.1:34668)
+2026/09/19 07:45:55 GET /healthz -> 503 (from 10.244.0.1:34678)
+2026/09/19 07:46:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:00 GET /healthz -> 503 (from 10.244.0.1:51692)
+2026/09/19 07:46:05 GET /healthz -> 503 (from 10.244.0.1:51698)
+2026/09/19 07:46:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:10 GET /healthz -> 503 (from 10.244.0.1:52282)
+2026/09/19 07:46:14 GET /healthz -> 503 (from 10.244.0.1:52290)
+2026/09/19 07:46:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:19 GET /healthz -> 503 (from 10.244.0.1:52296)
+2026/09/19 07:46:24 GET /healthz -> 503 (from 10.244.0.1:45572)
+2026/09/19 07:46:29 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:29 GET /healthz -> 503 (from 10.244.0.1:45584)
+2026/09/19 07:46:34 GET /healthz -> 503 (from 10.244.0.1:57116)
+2026/09/19 07:46:39 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:39 GET /healthz -> 503 (from 10.244.0.1:57130)
+2026/09/19 07:46:44 GET /healthz -> 503 (from 10.244.0.1:55348)
+2026/09/19 07:46:49 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:49 GET /healthz -> 503 (from 10.244.0.1:55360)
+2026/09/19 07:46:54 GET /healthz -> 503 (from 10.244.0.1:34120)
+2026/09/19 07:46:59 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:46:59 GET /healthz -> 503 (from 10.244.0.1:34130)
+2026/09/19 07:47:04 GET /healthz -> 503 (from 10.244.0.1:52620)
+2026/09/19 07:47:09 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:47:09 GET /healthz -> 503 (from 10.244.0.1:52636)
+2026/09/19 07:47:14 GET /healthz -> 503 (from 10.244.0.1:33650)
+2026/09/19 07:47:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:47:19 GET /healthz -> 503 (from 10.244.0.1:33660)
+2026/09/19 07:47:24 GET /healthz -> 503 (from 10.244.0.1:60936)
+2026/09/19 07:47:29 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:47:29 GET /healthz -> 503 (from 10.244.0.1:60946)
+2026/09/19 07:47:31 GET /healthz -> 503 (from 10.244.0.1:36440)
+2026/09/19 07:47:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:47:36 GET /healthz -> 503 (from 10.244.0.1:36452)
+2026/09/19 07:47:41 GET /healthz -> 503 (from 10.244.0.1:49396)
+2026/09/19 07:47:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:47:46 GET /healthz -> 503 (from 10.244.0.1:49408)
+2026/09/19 07:47:51 GET /healthz -> 503 (from 10.244.0.1:57944)
+2026/09/19 07:47:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:47:56 GET /healthz -> 503 (from 10.244.0.1:57958)
+2026/09/19 07:48:01 GET /healthz -> 503 (from 10.244.0.1:53660)
+2026/09/19 07:48:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:48:06 GET /healthz -> 503 (from 10.244.0.1:53676)
+2026/09/19 07:48:11 GET /healthz -> 503 (from 10.244.0.1:34816)
+2026/09/19 07:48:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:48:16 GET /healthz -> 503 (from 10.244.0.1:34820)
+2026/09/19 07:48:21 GET /healthz -> 503 (from 10.244.0.1:58702)
+2026/09/19 07:48:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:48:26 GET /healthz -> 503 (from 10.244.0.1:58712)
+2026/09/19 07:48:31 GET /healthz -> 503 (from 10.244.0.1:38226)
+2026/09/19 07:48:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:48:36 GET /healthz -> 503 (from 10.244.0.1:38230)
+2026/09/19 07:48:41 GET /healthz -> 503 (from 10.244.0.1:53932)
+2026/09/19 07:48:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:48:43 GET /healthz -> 503 (from 10.244.0.1:53946)
+2026/09/19 07:48:48 GET /healthz -> 503 (from 10.244.0.1:53960)
+2026/09/19 07:48:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:48:53 GET /healthz -> 503 (from 10.244.0.1:52636)
+2026/09/19 07:48:58 GET /healthz -> 503 (from 10.244.0.1:52648)
+2026/09/19 07:49:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:49:03 GET /healthz -> 503 (from 10.244.0.1:36566)
+2026/09/19 07:49:08 GET /healthz -> 503 (from 10.244.0.1:36578)
+2026/09/19 07:49:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:49:13 GET /healthz -> 503 (from 10.244.0.1:46432)
+2026/09/19 07:49:18 GET /healthz -> 503 (from 10.244.0.1:46438)
+2026/09/19 07:49:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:49:23 GET /healthz -> 503 (from 10.244.0.1:41816)
+2026/09/19 07:49:28 GET /healthz -> 503 (from 10.244.0.1:41832)
+2026/09/19 07:49:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:49:33 GET /healthz -> 503 (from 10.244.0.1:37490)
+2026/09/19 07:49:38 GET /healthz -> 503 (from 10.244.0.1:37500)
+2026/09/19 07:49:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:49:43 GET /healthz -> 503 (from 10.244.0.1:37156)
+2026/09/19 07:49:48 GET /healthz -> 503 (from 10.244.0.1:37166)
+2026/09/19 07:49:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:49:53 GET /healthz -> 503 (from 10.244.0.1:60764)
+2026/09/19 07:49:58 GET /healthz -> 503 (from 10.244.0.1:60774)
+2026/09/19 07:50:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:50:03 GET /healthz -> 503 (from 10.244.0.1:50260)
+2026/09/19 07:50:08 GET /healthz -> 503 (from 10.244.0.1:50264)
+2026/09/19 07:50:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 07:50:13 GET /healthz -> 503 (from 10.244.0.1:41448)
+2026/09/19 07:50:18 GET /healthz -> 503 (from 10.244.0.1:41460)
+2026/09/19 08:04:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:04:07 GET /healthz -> 503 (from 10.244.0.1:54688)
+2026/09/19 08:04:12 GET /healthz -> 503 (from 10.244.0.1:54692)
+2026/09/19 08:04:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:04:17 GET /healthz -> 503 (from 10.244.0.1:53672)
+2026/09/19 08:04:22 GET /healthz -> 503 (from 10.244.0.1:53674)
+2026/09/19 08:04:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:04:27 GET /healthz -> 503 (from 10.244.0.1:41724)
+2026/09/19 08:04:32 GET /healthz -> 503 (from 10.244.0.1:41732)
+2026/09/19 08:04:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:04:37 GET /healthz -> 503 (from 10.244.0.1:38010)
+2026/09/19 08:04:42 GET /healthz -> 503 (from 10.244.0.1:38020)
+2026/09/19 08:04:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:04:47 GET /healthz -> 503 (from 10.244.0.1:34064)
+2026/09/19 08:04:52 GET /healthz -> 503 (from 10.244.0.1:34072)
+2026/09/19 08:04:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:04:57 GET /healthz -> 503 (from 10.244.0.1:51558)
+2026/09/19 08:04:58 GET /healthz -> 503 (from 10.244.0.1:51566)
+2026/09/19 08:05:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:05:03 GET /healthz -> 503 (from 10.244.0.1:51572)
+2026/09/19 08:05:08 GET /healthz -> 503 (from 10.244.0.1:38282)
+2026/09/19 08:05:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:05:13 GET /healthz -> 503 (from 10.244.0.1:38294)
+2026/09/19 08:05:18 GET /healthz -> 503 (from 10.244.0.1:36188)
+2026/09/19 08:05:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:05:23 GET /healthz -> 503 (from 10.244.0.1:36194)
+2026/09/19 08:05:28 GET /healthz -> 503 (from 10.244.0.1:42768)
+2026/09/19 08:05:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:05:33 GET /healthz -> 503 (from 10.244.0.1:42772)
+2026/09/19 08:05:38 GET /healthz -> 503 (from 10.244.0.1:59682)
+2026/09/19 08:05:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:05:43 GET /healthz -> 503 (from 10.244.0.1:59698)
+2026/09/19 08:05:48 GET /healthz -> 503 (from 10.244.0.1:53166)
+2026/09/19 08:05:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:05:53 GET /healthz -> 503 (from 10.244.0.1:53182)
+2026/09/19 08:05:58 GET /healthz -> 503 (from 10.244.0.1:40770)
+2026/09/19 08:06:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:06:03 GET /healthz -> 503 (from 10.244.0.1:40778)
+2026/09/19 08:06:08 GET /healthz -> 503 (from 10.244.0.1:52864)
+2026/09/19 08:06:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:06:13 GET /healthz -> 503 (from 10.244.0.1:52868)
+2026/09/19 08:06:18 GET /healthz -> 503 (from 10.244.0.1:42516)
+2026/09/19 08:06:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:06:23 GET /healthz -> 503 (from 10.244.0.1:42532)
+2026/09/19 08:06:28 GET /healthz -> 503 (from 10.244.0.1:59272)
+2026/09/19 08:06:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:06:33 GET /healthz -> 503 (from 10.244.0.1:59288)
+2026/09/19 08:06:38 GET /healthz -> 503 (from 10.244.0.1:60448)
+2026/09/19 08:06:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:06:43 GET /healthz -> 503 (from 10.244.0.1:60456)
+2026/09/19 08:06:48 GET /healthz -> 503 (from 10.244.0.1:60612)
+2026/09/19 08:06:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:06:53 GET /healthz -> 503 (from 10.244.0.1:60626)
+2026/09/19 08:06:58 GET /healthz -> 503 (from 10.244.0.1:56528)
+2026/09/19 08:07:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:07:03 GET /healthz -> 503 (from 10.244.0.1:56544)
+2026/09/19 08:07:08 GET /healthz -> 503 (from 10.244.0.1:40084)
+2026/09/19 08:07:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:07:13 GET /healthz -> 503 (from 10.244.0.1:40098)
+2026/09/19 08:07:18 GET /healthz -> 503 (from 10.244.0.1:49750)
+2026/09/19 08:07:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:07:23 GET /healthz -> 503 (from 10.244.0.1:49766)
+2026/09/19 08:07:28 GET /healthz -> 503 (from 10.244.0.1:53300)
+2026/09/19 08:07:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:07:33 GET /healthz -> 503 (from 10.244.0.1:53304)
+2026/09/19 08:07:38 GET /healthz -> 503 (from 10.244.0.1:45600)
+2026/09/19 08:07:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:07:43 GET /healthz -> 503 (from 10.244.0.1:45610)
+2026/09/19 08:07:48 GET /healthz -> 503 (from 10.244.0.1:60136)
+2026/09/19 08:07:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:07:50 GET /healthz -> 503 (from 10.244.0.1:60138)
+2026/09/19 08:07:55 GET /healthz -> 503 (from 10.244.0.1:47252)
+2026/09/19 08:08:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:08:00 GET /healthz -> 503 (from 10.244.0.1:47260)
+2026/09/19 08:08:05 GET /healthz -> 503 (from 10.244.0.1:39902)
+2026/09/19 08:08:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:08:10 GET /healthz -> 503 (from 10.244.0.1:39914)
+2026/09/19 08:08:15 GET /healthz -> 503 (from 10.244.0.1:33696)
+2026/09/19 08:08:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:08:20 GET /healthz -> 503 (from 10.244.0.1:33708)
+2026/09/19 08:08:25 GET /healthz -> 503 (from 10.244.0.1:40884)
+2026/09/19 08:08:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:08:30 GET /healthz -> 503 (from 10.244.0.1:40900)
+2026/09/19 08:08:35 GET /healthz -> 503 (from 10.244.0.1:41172)
+2026/09/19 08:08:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:08:40 GET /healthz -> 503 (from 10.244.0.1:41174)
+2026/09/19 08:08:45 GET /healthz -> 503 (from 10.244.0.1:39488)
+2026/09/19 08:08:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:08:50 GET /healthz -> 503 (from 10.244.0.1:39502)
+2026/09/19 08:08:55 GET /healthz -> 503 (from 10.244.0.1:52114)
+2026/09/19 08:09:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:00 GET /healthz -> 503 (from 10.244.0.1:52118)
+2026/09/19 08:09:05 GET /healthz -> 503 (from 10.244.0.1:55804)
+2026/09/19 08:09:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:10 GET /healthz -> 503 (from 10.244.0.1:55812)
+2026/09/19 08:09:14 GET /healthz -> 503 (from 10.244.0.1:49534)
+2026/09/19 08:09:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:19 GET /healthz -> 503 (from 10.244.0.1:49548)
+2026/09/19 08:09:24 GET /healthz -> 503 (from 10.244.0.1:51204)
+2026/09/19 08:09:29 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:29 GET /healthz -> 503 (from 10.244.0.1:51218)
+2026/09/19 08:09:34 GET /healthz -> 503 (from 10.244.0.1:54530)
+2026/09/19 08:09:39 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:39 GET /healthz -> 503 (from 10.244.0.1:54544)
+2026/09/19 08:09:44 GET /healthz -> 503 (from 10.244.0.1:37080)
+2026/09/19 08:09:49 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:49 GET /healthz -> 503 (from 10.244.0.1:37086)
+2026/09/19 08:09:54 GET /healthz -> 503 (from 10.244.0.1:44094)
+2026/09/19 08:09:59 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:09:59 GET /healthz -> 503 (from 10.244.0.1:44106)
+2026/09/19 08:10:04 GET /healthz -> 503 (from 10.244.0.1:57470)
+2026/09/19 08:10:09 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:10:09 GET /healthz -> 503 (from 10.244.0.1:57478)
+2026/09/19 08:10:14 GET /healthz -> 503 (from 10.244.0.1:34528)
+2026/09/19 08:10:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:10:19 GET /healthz -> 503 (from 10.244.0.1:34534)
+2026/09/19 08:10:19 GET /healthz -> 503 (from 10.244.0.1:34548)
+2026/09/19 08:10:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:10:24 GET /healthz -> 503 (from 10.244.0.1:58038)
+2026/09/19 08:10:29 GET /healthz -> 503 (from 10.244.0.1:58052)
+2026/09/19 08:10:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:10:34 GET /healthz -> 503 (from 10.244.0.1:56942)
+2026/09/19 08:10:39 GET /healthz -> 503 (from 10.244.0.1:56958)
+2026/09/19 08:10:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:10:44 GET /healthz -> 503 (from 10.244.0.1:36728)
+2026/09/19 08:10:49 GET /healthz -> 503 (from 10.244.0.1:36730)
+2026/09/19 08:10:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:10:54 GET /healthz -> 503 (from 10.244.0.1:36564)
+2026/09/19 08:10:59 GET /healthz -> 503 (from 10.244.0.1:36574)
+2026/09/19 08:11:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:11:04 GET /healthz -> 503 (from 10.244.0.1:42740)
+2026/09/19 08:11:09 GET /healthz -> 503 (from 10.244.0.1:42748)
+2026/09/19 08:11:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:11:14 GET /healthz -> 503 (from 10.244.0.1:36666)
+2026/09/19 08:11:19 GET /healthz -> 503 (from 10.244.0.1:36672)
+2026/09/19 08:11:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:11:24 GET /healthz -> 503 (from 10.244.0.1:57966)
+2026/09/19 08:11:29 GET /healthz -> 503 (from 10.244.0.1:57968)
+2026/09/19 08:11:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:11:34 GET /healthz -> 503 (from 10.244.0.1:44458)
+2026/09/19 08:11:39 GET /healthz -> 503 (from 10.244.0.1:44464)
+2026/09/19 08:11:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:11:44 GET /healthz -> 503 (from 10.244.0.1:49578)
+2026/09/19 08:11:49 GET /healthz -> 503 (from 10.244.0.1:49584)
+2026/09/19 08:11:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:11:54 GET /healthz -> 503 (from 10.244.0.1:44000)
+2026/09/19 08:11:59 GET /healthz -> 503 (from 10.244.0.1:44014)
+2026/09/19 08:12:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:12:04 GET /healthz -> 503 (from 10.244.0.1:56788)
+2026/09/19 08:12:09 GET /healthz -> 503 (from 10.244.0.1:56796)
+2026/09/19 08:12:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:12:14 GET /healthz -> 503 (from 10.244.0.1:56748)
+2026/09/19 08:12:19 GET /healthz -> 503 (from 10.244.0.1:56756)
+2026/09/19 08:12:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:12:24 GET /healthz -> 503 (from 10.244.0.1:60768)
+2026/09/19 08:12:29 GET /healthz -> 503 (from 10.244.0.1:60776)
+2026/09/19 08:12:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:12:34 GET /healthz -> 503 (from 10.244.0.1:33422)
+2026/09/19 08:12:39 GET /healthz -> 503 (from 10.244.0.1:33438)
+2026/09/19 08:12:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:12:44 GET /healthz -> 503 (from 10.244.0.1:38032)
+2026/09/19 08:12:49 GET /healthz -> 503 (from 10.244.0.1:38036)
+2026/09/19 08:12:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:12:54 GET /healthz -> 503 (from 10.244.0.1:44342)
+2026/09/19 08:12:59 GET /healthz -> 503 (from 10.244.0.1:44352)
+2026/09/19 08:13:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:13:04 GET /healthz -> 503 (from 10.244.0.1:40372)
+2026/09/19 08:13:09 GET /healthz -> 503 (from 10.244.0.1:40376)
+2026/09/19 08:13:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:13:14 GET /healthz -> 503 (from 10.244.0.1:49716)
+2026/09/19 08:13:19 GET /healthz -> 503 (from 10.244.0.1:49726)
+2026/09/19 08:13:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:13:24 GET /healthz -> 503 (from 10.244.0.1:53762)
+2026/09/19 08:13:29 GET /healthz -> 503 (from 10.244.0.1:53770)
+2026/09/19 08:13:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:13:34 GET /healthz -> 503 (from 10.244.0.1:45514)
+2026/09/19 08:13:39 GET /healthz -> 503 (from 10.244.0.1:45518)
+2026/09/19 08:13:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:13:44 GET /healthz -> 503 (from 10.244.0.1:51754)
+2026/09/19 08:13:49 GET /healthz -> 503 (from 10.244.0.1:51758)
+2026/09/19 08:13:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:13:54 GET /healthz -> 503 (from 10.244.0.1:36512)
+2026/09/19 08:13:56 GET /healthz -> 503 (from 10.244.0.1:36516)
+2026/09/19 08:14:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:14:01 GET /healthz -> 503 (from 10.244.0.1:36518)
+2026/09/19 08:14:06 GET /healthz -> 503 (from 10.244.0.1:57962)
+2026/09/19 08:14:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:14:11 GET /healthz -> 503 (from 10.244.0.1:57964)
+2026/09/19 08:14:16 GET /healthz -> 503 (from 10.244.0.1:60886)
+2026/09/19 08:14:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:14:21 GET /healthz -> 503 (from 10.244.0.1:60900)
+2026/09/19 08:14:26 GET /healthz -> 503 (from 10.244.0.1:34258)
+2026/09/19 08:14:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:14:31 GET /healthz -> 503 (from 10.244.0.1:34272)
+2026/09/19 08:14:36 GET /healthz -> 503 (from 10.244.0.1:40560)
+2026/09/19 08:14:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:14:41 GET /healthz -> 503 (from 10.244.0.1:40564)
+2026/09/19 08:14:46 GET /healthz -> 503 (from 10.244.0.1:36778)
+2026/09/19 08:14:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:14:51 GET /healthz -> 503 (from 10.244.0.1:36782)
+2026/09/19 08:14:56 GET /healthz -> 503 (from 10.244.0.1:59266)
+2026/09/19 08:15:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:15:01 GET /healthz -> 503 (from 10.244.0.1:59278)
+2026/09/19 08:15:06 GET /healthz -> 503 (from 10.244.0.1:40478)
+2026/09/19 08:15:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:15:11 GET /healthz -> 503 (from 10.244.0.1:40494)
+2026/09/19 08:15:16 GET /healthz -> 503 (from 10.244.0.1:36848)
+2026/09/19 08:15:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:15:21 GET /healthz -> 503 (from 10.244.0.1:36850)
+2026/09/19 08:15:26 GET /healthz -> 503 (from 10.244.0.1:55152)
+2026/09/19 08:15:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:15:31 GET /healthz -> 503 (from 10.244.0.1:55154)
+2026/09/19 08:15:36 GET /healthz -> 503 (from 10.244.0.1:39094)
+2026/09/19 08:15:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:15:41 GET /healthz -> 503 (from 10.244.0.1:39104)
+2026/09/19 08:15:46 GET /healthz -> 503 (from 10.244.0.1:37176)
+2026/09/19 08:15:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:15:51 GET /healthz -> 503 (from 10.244.0.1:37190)
+2026/09/19 08:15:56 GET /healthz -> 503 (from 10.244.0.1:59766)
+2026/09/19 08:16:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:16:01 GET /healthz -> 503 (from 10.244.0.1:59776)
+2026/09/19 08:16:06 GET /healthz -> 503 (from 10.244.0.1:57748)
+2026/09/19 08:16:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:16:11 GET /healthz -> 503 (from 10.244.0.1:57750)
+2026/09/19 08:16:16 GET /healthz -> 503 (from 10.244.0.1:54838)
+2026/09/19 08:16:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:16:21 GET /healthz -> 503 (from 10.244.0.1:54852)
+2026/09/19 08:16:26 GET /healthz -> 503 (from 10.244.0.1:42550)
+2026/09/19 08:16:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:16:31 GET /healthz -> 503 (from 10.244.0.1:42566)
+2026/09/19 08:16:36 GET /healthz -> 503 (from 10.244.0.1:37994)
+2026/09/19 08:16:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:16:41 GET /healthz -> 503 (from 10.244.0.1:38004)
+2026/09/19 08:16:45 GET /healthz -> 503 (from 10.244.0.1:60580)
+2026/09/19 08:16:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:16:50 GET /healthz -> 503 (from 10.244.0.1:60590)
+2026/09/19 08:16:55 GET /healthz -> 503 (from 10.244.0.1:47494)
+2026/09/19 08:17:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:00 GET /healthz -> 503 (from 10.244.0.1:47498)
+2026/09/19 08:17:05 GET /healthz -> 503 (from 10.244.0.1:38030)
+2026/09/19 08:17:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:10 GET /healthz -> 503 (from 10.244.0.1:38042)
+2026/09/19 08:17:15 GET /healthz -> 503 (from 10.244.0.1:37514)
+2026/09/19 08:17:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:20 GET /healthz -> 503 (from 10.244.0.1:37516)
+2026/09/19 08:17:25 GET /healthz -> 503 (from 10.244.0.1:59194)
+2026/09/19 08:17:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:30 GET /healthz -> 503 (from 10.244.0.1:59208)
+2026/09/19 08:17:35 GET /healthz -> 503 (from 10.244.0.1:52052)
+2026/09/19 08:17:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:40 GET /healthz -> 503 (from 10.244.0.1:52060)
+2026/09/19 08:17:45 GET /healthz -> 503 (from 10.244.0.1:51844)
+2026/09/19 08:17:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:50 GET /healthz -> 503 (from 10.244.0.1:51860)
+2026/09/19 08:17:55 GET /healthz -> 503 (from 10.244.0.1:33346)
+2026/09/19 08:17:58 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:17:58 GET /healthz -> 503 (from 10.244.0.1:33360)
+2026/09/19 08:18:03 GET /healthz -> 503 (from 10.244.0.1:33372)
+2026/09/19 08:18:08 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:18:08 GET /healthz -> 503 (from 10.244.0.1:48604)
+2026/09/19 08:18:13 GET /healthz -> 503 (from 10.244.0.1:48620)
+2026/09/19 08:18:18 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:18:18 GET /healthz -> 503 (from 10.244.0.1:55934)
+2026/09/19 08:18:23 GET /healthz -> 503 (from 10.244.0.1:55944)
+2026/09/19 08:18:28 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:18:28 GET /healthz -> 503 (from 10.244.0.1:40778)
+2026/09/19 08:18:33 GET /healthz -> 503 (from 10.244.0.1:40784)
+2026/09/19 08:18:38 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:18:38 GET /healthz -> 503 (from 10.244.0.1:33174)
+2026/09/19 08:18:43 GET /healthz -> 503 (from 10.244.0.1:33176)
+2026/09/19 08:18:48 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:18:48 GET /healthz -> 503 (from 10.244.0.1:53348)
+2026/09/19 08:18:53 GET /healthz -> 503 (from 10.244.0.1:53360)
+2026/09/19 08:18:58 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:18:58 GET /healthz -> 503 (from 10.244.0.1:48480)
+2026/09/19 08:19:03 GET /healthz -> 503 (from 10.244.0.1:48482)
+2026/09/19 08:19:08 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:19:08 GET /healthz -> 503 (from 10.244.0.1:41244)
+2026/09/19 08:19:12 GET /healthz -> 503 (from 10.244.0.1:41256)
+2026/09/19 08:19:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:19:17 GET /healthz -> 503 (from 10.244.0.1:57220)
+2026/09/19 08:19:22 GET /healthz -> 503 (from 10.244.0.1:57234)
+2026/09/19 08:19:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:19:27 GET /healthz -> 503 (from 10.244.0.1:48824)
+2026/09/19 08:19:32 GET /healthz -> 503 (from 10.244.0.1:48834)
+2026/09/19 08:19:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:19:37 GET /healthz -> 503 (from 10.244.0.1:51128)
+2026/09/19 08:19:42 GET /healthz -> 503 (from 10.244.0.1:51130)
+2026/09/19 08:19:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:19:47 GET /healthz -> 503 (from 10.244.0.1:43948)
+2026/09/19 08:19:52 GET /healthz -> 503 (from 10.244.0.1:43952)
+2026/09/19 08:19:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:19:57 GET /healthz -> 503 (from 10.244.0.1:43424)
+2026/09/19 08:20:02 GET /healthz -> 503 (from 10.244.0.1:43432)
+2026/09/19 08:20:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:20:07 GET /healthz -> 503 (from 10.244.0.1:46296)
+2026/09/19 08:20:12 GET /healthz -> 503 (from 10.244.0.1:46304)
+2026/09/19 08:20:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:20:17 GET /healthz -> 503 (from 10.244.0.1:53226)
+2026/09/19 08:20:20 GET /healthz -> 503 (from 10.244.0.1:53228)
+2026/09/19 08:20:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:20:25 GET /healthz -> 503 (from 10.244.0.1:33002)
+2026/09/19 08:20:30 GET /healthz -> 503 (from 10.244.0.1:33012)
+2026/09/19 08:20:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:20:35 GET /healthz -> 503 (from 10.244.0.1:45852)
+2026/09/19 08:20:40 GET /healthz -> 503 (from 10.244.0.1:45858)
+2026/09/19 08:20:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:20:45 GET /healthz -> 503 (from 10.244.0.1:44306)
+2026/09/19 08:20:50 GET /healthz -> 503 (from 10.244.0.1:44318)
+2026/09/19 08:20:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:20:55 GET /healthz -> 503 (from 10.244.0.1:52634)
+2026/09/19 08:21:00 GET /healthz -> 503 (from 10.244.0.1:52636)
+2026/09/19 08:21:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:21:05 GET /healthz -> 503 (from 10.244.0.1:40330)
+2026/09/19 08:21:10 GET /healthz -> 503 (from 10.244.0.1:40340)
+2026/09/19 08:21:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:21:15 GET /healthz -> 503 (from 10.244.0.1:39362)
+2026/09/19 08:21:20 GET /healthz -> 503 (from 10.244.0.1:39364)
+2026/09/19 08:21:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:21:25 GET /healthz -> 503 (from 10.244.0.1:41518)
+2026/09/19 08:21:30 GET /healthz -> 503 (from 10.244.0.1:41532)
+2026/09/19 08:21:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:21:35 GET /healthz -> 503 (from 10.244.0.1:55324)
+2026/09/19 08:21:35 GET /healthz -> 503 (from 10.244.0.1:55326)
+2026/09/19 08:21:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:21:40 GET /healthz -> 503 (from 10.244.0.1:55332)
+2026/09/19 08:21:45 GET /healthz -> 503 (from 10.244.0.1:43846)
+2026/09/19 08:21:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:21:50 GET /healthz -> 503 (from 10.244.0.1:43860)
+2026/09/19 08:21:55 GET /healthz -> 503 (from 10.244.0.1:39746)
+2026/09/19 08:22:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:22:00 GET /healthz -> 503 (from 10.244.0.1:39754)
+2026/09/19 08:22:05 GET /healthz -> 503 (from 10.244.0.1:46340)
+2026/09/19 08:22:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:22:10 GET /healthz -> 503 (from 10.244.0.1:46348)
+2026/09/19 08:22:15 GET /healthz -> 503 (from 10.244.0.1:36410)
+2026/09/19 08:22:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:22:20 GET /healthz -> 503 (from 10.244.0.1:36418)
+2026/09/19 08:22:25 GET /healthz -> 503 (from 10.244.0.1:54180)
+2026/09/19 08:22:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:22:30 GET /healthz -> 503 (from 10.244.0.1:54188)
+2026/09/19 08:22:35 GET /healthz -> 503 (from 10.244.0.1:57952)
+2026/09/19 08:22:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:22:40 GET /healthz -> 503 (from 10.244.0.1:57966)
+2026/09/19 08:22:45 GET /healthz -> 503 (from 10.244.0.1:41658)
+2026/09/19 08:22:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:22:50 GET /healthz -> 503 (from 10.244.0.1:41666)
+2026/09/19 08:22:55 GET /healthz -> 503 (from 10.244.0.1:49892)
+2026/09/19 08:23:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:23:00 GET /healthz -> 503 (from 10.244.0.1:49894)
+2026/09/19 08:23:05 GET /healthz -> 503 (from 10.244.0.1:41750)
+2026/09/19 08:23:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:23:10 GET /healthz -> 503 (from 10.244.0.1:41760)
+2026/09/19 08:23:15 GET /healthz -> 503 (from 10.244.0.1:33208)
+2026/09/19 08:23:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:23:20 GET /healthz -> 503 (from 10.244.0.1:33214)
+2026/09/19 08:23:25 GET /healthz -> 503 (from 10.244.0.1:49050)
+2026/09/19 08:23:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:23:30 GET /healthz -> 503 (from 10.244.0.1:49066)
+2026/09/19 08:23:35 GET /healthz -> 503 (from 10.244.0.1:37270)
+2026/09/19 08:23:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:23:40 GET /healthz -> 503 (from 10.244.0.1:37278)
+2026/09/19 08:23:45 GET /healthz -> 503 (from 10.244.0.1:44744)
+2026/09/19 08:23:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:23:50 GET /healthz -> 503 (from 10.244.0.1:44750)
+2026/09/19 08:23:55 GET /healthz -> 503 (from 10.244.0.1:49132)
+2026/09/19 08:24:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:00 GET /healthz -> 503 (from 10.244.0.1:49134)
+2026/09/19 08:24:05 GET /healthz -> 503 (from 10.244.0.1:45838)
+2026/09/19 08:24:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:10 GET /healthz -> 503 (from 10.244.0.1:45846)
+2026/09/19 08:24:15 GET /healthz -> 503 (from 10.244.0.1:35884)
+2026/09/19 08:24:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:20 GET /healthz -> 503 (from 10.244.0.1:35890)
+2026/09/19 08:24:21 GET /healthz -> 503 (from 10.244.0.1:35906)
+2026/09/19 08:24:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:26 GET /healthz -> 503 (from 10.244.0.1:59736)
+2026/09/19 08:24:31 GET /healthz -> 503 (from 10.244.0.1:59744)
+2026/09/19 08:24:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:36 GET /healthz -> 503 (from 10.244.0.1:33452)
+2026/09/19 08:24:41 GET /healthz -> 503 (from 10.244.0.1:33462)
+2026/09/19 08:24:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:46 GET /healthz -> 503 (from 10.244.0.1:48730)
+2026/09/19 08:24:51 GET /healthz -> 503 (from 10.244.0.1:48742)
+2026/09/19 08:24:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:24:56 GET /healthz -> 503 (from 10.244.0.1:34576)
+2026/09/19 08:25:01 GET /healthz -> 503 (from 10.244.0.1:34584)
+2026/09/19 08:25:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:25:06 GET /healthz -> 503 (from 10.244.0.1:38922)
+2026/09/19 08:25:11 GET /healthz -> 503 (from 10.244.0.1:38934)
+2026/09/19 08:25:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:25:16 GET /healthz -> 503 (from 10.244.0.1:55258)
+2026/09/19 08:25:21 GET /healthz -> 503 (from 10.244.0.1:55274)
+2026/09/19 08:25:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:25:26 GET /healthz -> 503 (from 10.244.0.1:34560)
+2026/09/19 08:25:31 GET /healthz -> 503 (from 10.244.0.1:34562)
+2026/09/19 08:25:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:25:36 GET /healthz -> 503 (from 10.244.0.1:47256)
+2026/09/19 08:25:38 GET /healthz -> 503 (from 10.244.0.1:47272)
+2026/09/19 08:25:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:25:43 GET /healthz -> 503 (from 10.244.0.1:47282)
+2026/09/19 08:25:48 GET /healthz -> 503 (from 10.244.0.1:55102)
+2026/09/19 08:25:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:25:53 GET /healthz -> 503 (from 10.244.0.1:55116)
+2026/09/19 08:25:58 GET /healthz -> 503 (from 10.244.0.1:40770)
+2026/09/19 08:26:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:26:03 GET /healthz -> 503 (from 10.244.0.1:40784)
+2026/09/19 08:26:08 GET /healthz -> 503 (from 10.244.0.1:59416)
+2026/09/19 08:26:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:26:13 GET /healthz -> 503 (from 10.244.0.1:59428)
+2026/09/19 08:26:18 GET /healthz -> 503 (from 10.244.0.1:50462)
+2026/09/19 08:26:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:26:23 GET /healthz -> 503 (from 10.244.0.1:50474)
+2026/09/19 08:26:28 GET /healthz -> 503 (from 10.244.0.1:36332)
+2026/09/19 08:26:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:26:33 GET /healthz -> 503 (from 10.244.0.1:36342)
+2026/09/19 08:26:38 GET /healthz -> 503 (from 10.244.0.1:58018)
+2026/09/19 08:26:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:26:43 GET /healthz -> 503 (from 10.244.0.1:58030)
+2026/09/19 08:26:48 GET /healthz -> 503 (from 10.244.0.1:51662)
+2026/09/19 08:26:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:26:53 GET /healthz -> 503 (from 10.244.0.1:51678)
+2026/09/19 08:26:58 GET /healthz -> 503 (from 10.244.0.1:34758)
+2026/09/19 08:27:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:27:03 GET /healthz -> 503 (from 10.244.0.1:34772)
+2026/09/19 08:27:07 GET /healthz -> 503 (from 10.244.0.1:38008)
+2026/09/19 08:27:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:27:12 GET /healthz -> 503 (from 10.244.0.1:38022)
+2026/09/19 08:27:17 GET /healthz -> 503 (from 10.244.0.1:59824)
+2026/09/19 08:27:22 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:27:22 GET /healthz -> 503 (from 10.244.0.1:59830)
+2026/09/19 08:27:27 GET /healthz -> 503 (from 10.244.0.1:58010)
+2026/09/19 08:27:32 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:27:32 GET /healthz -> 503 (from 10.244.0.1:58012)
+2026/09/19 08:27:37 GET /healthz -> 503 (from 10.244.0.1:37916)
+2026/09/19 08:27:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:27:42 GET /healthz -> 503 (from 10.244.0.1:37932)
+2026/09/19 08:27:47 GET /healthz -> 503 (from 10.244.0.1:54824)
+2026/09/19 08:27:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:27:52 GET /healthz -> 503 (from 10.244.0.1:54838)
+2026/09/19 08:27:57 GET /healthz -> 503 (from 10.244.0.1:50834)
+2026/09/19 08:28:02 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:28:02 GET /healthz -> 503 (from 10.244.0.1:50846)
+2026/09/19 08:28:07 GET /healthz -> 503 (from 10.244.0.1:51910)
+2026/09/19 08:28:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:28:12 GET /healthz -> 503 (from 10.244.0.1:51922)
+2026/09/19 08:28:17 GET /healthz -> 503 (from 10.244.0.1:32952)
+2026/09/19 08:28:22 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:28:22 GET /healthz -> 503 (from 10.244.0.1:32954)
+2026/09/19 08:28:27 GET /healthz -> 503 (from 10.244.0.1:40328)
+2026/09/19 08:28:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:28:30 GET /healthz -> 503 (from 10.244.0.1:40340)
+2026/09/19 08:28:35 GET /healthz -> 503 (from 10.244.0.1:47506)
+2026/09/19 08:28:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:28:40 GET /healthz -> 503 (from 10.244.0.1:47522)
+2026/09/19 08:28:45 GET /healthz -> 503 (from 10.244.0.1:48768)
+2026/09/19 08:28:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:28:50 GET /healthz -> 503 (from 10.244.0.1:48770)
+2026/09/19 08:28:55 GET /healthz -> 503 (from 10.244.0.1:37306)
+2026/09/19 08:29:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:00 GET /healthz -> 503 (from 10.244.0.1:37310)
+2026/09/19 08:29:05 GET /healthz -> 503 (from 10.244.0.1:52372)
+2026/09/19 08:29:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:10 GET /healthz -> 503 (from 10.244.0.1:52384)
+2026/09/19 08:29:15 GET /healthz -> 503 (from 10.244.0.1:39812)
+2026/09/19 08:29:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:20 GET /healthz -> 503 (from 10.244.0.1:39816)
+2026/09/19 08:29:25 GET /healthz -> 503 (from 10.244.0.1:60022)
+2026/09/19 08:29:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:30 GET /healthz -> 503 (from 10.244.0.1:60036)
+2026/09/19 08:29:35 GET /healthz -> 503 (from 10.244.0.1:54392)
+2026/09/19 08:29:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:37 GET /healthz -> 503 (from 10.244.0.1:54402)
+2026/09/19 08:29:42 GET /healthz -> 503 (from 10.244.0.1:54416)
+2026/09/19 08:29:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:47 GET /healthz -> 503 (from 10.244.0.1:52250)
+2026/09/19 08:29:52 GET /healthz -> 503 (from 10.244.0.1:52256)
+2026/09/19 08:29:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:29:57 GET /healthz -> 503 (from 10.244.0.1:55812)
+2026/09/19 08:30:02 GET /healthz -> 503 (from 10.244.0.1:55826)
+2026/09/19 08:30:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:30:07 GET /healthz -> 503 (from 10.244.0.1:43380)
+2026/09/19 08:30:12 GET /healthz -> 503 (from 10.244.0.1:43390)
+2026/09/19 08:30:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:30:17 GET /healthz -> 503 (from 10.244.0.1:47998)
+2026/09/19 08:30:22 GET /healthz -> 503 (from 10.244.0.1:48012)
+2026/09/19 08:30:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:30:27 GET /healthz -> 503 (from 10.244.0.1:50562)
+2026/09/19 08:30:32 GET /healthz -> 503 (from 10.244.0.1:50572)
+2026/09/19 08:30:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:30:37 GET /healthz -> 503 (from 10.244.0.1:33248)
+2026/09/19 08:30:42 GET /healthz -> 503 (from 10.244.0.1:33252)
+2026/09/19 08:30:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:30:47 GET /healthz -> 503 (from 10.244.0.1:47236)
+2026/09/19 08:30:52 GET /healthz -> 503 (from 10.244.0.1:47248)
+2026/09/19 08:30:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:30:53 GET /healthz -> 503 (from 10.244.0.1:47254)
+2026/09/19 08:30:58 GET /healthz -> 503 (from 10.244.0.1:34944)
+2026/09/19 08:31:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:31:03 GET /healthz -> 503 (from 10.244.0.1:34960)
+2026/09/19 08:31:08 GET /healthz -> 503 (from 10.244.0.1:33372)
+2026/09/19 08:31:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:31:13 GET /healthz -> 503 (from 10.244.0.1:33384)
+2026/09/19 08:31:18 GET /healthz -> 503 (from 10.244.0.1:51882)
+2026/09/19 08:31:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:31:23 GET /healthz -> 503 (from 10.244.0.1:51894)
+2026/09/19 08:31:28 GET /healthz -> 503 (from 10.244.0.1:59512)
+2026/09/19 08:31:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:31:33 GET /healthz -> 503 (from 10.244.0.1:59522)
+2026/09/19 08:31:38 GET /healthz -> 503 (from 10.244.0.1:51788)
+2026/09/19 08:31:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:31:43 GET /healthz -> 503 (from 10.244.0.1:51802)
+2026/09/19 08:31:48 GET /healthz -> 503 (from 10.244.0.1:43224)
+2026/09/19 08:31:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:31:53 GET /healthz -> 503 (from 10.244.0.1:43226)
+2026/09/19 08:31:58 GET /healthz -> 503 (from 10.244.0.1:33434)
+2026/09/19 08:32:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:32:03 GET /healthz -> 503 (from 10.244.0.1:33436)
+2026/09/19 08:32:08 GET /healthz -> 503 (from 10.244.0.1:47540)
+2026/09/19 08:32:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:32:13 GET /healthz -> 503 (from 10.244.0.1:47556)
+2026/09/19 08:32:15 GET /healthz -> 503 (from 10.244.0.1:48994)
+2026/09/19 08:32:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:32:20 GET /healthz -> 503 (from 10.244.0.1:48998)
+2026/09/19 08:32:25 GET /healthz -> 503 (from 10.244.0.1:35628)
+2026/09/19 08:32:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:32:30 GET /healthz -> 503 (from 10.244.0.1:35632)
+2026/09/19 08:32:35 GET /healthz -> 503 (from 10.244.0.1:36088)
+2026/09/19 08:32:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:32:40 GET /healthz -> 503 (from 10.244.0.1:36094)
+2026/09/19 08:32:45 GET /healthz -> 503 (from 10.244.0.1:43542)
+2026/09/19 08:32:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:32:50 GET /healthz -> 503 (from 10.244.0.1:43554)
+2026/09/19 08:32:55 GET /healthz -> 503 (from 10.244.0.1:47778)
+2026/09/19 08:33:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:00 GET /healthz -> 503 (from 10.244.0.1:47784)
+2026/09/19 08:33:05 GET /healthz -> 503 (from 10.244.0.1:43044)
+2026/09/19 08:33:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:10 GET /healthz -> 503 (from 10.244.0.1:43056)
+2026/09/19 08:33:15 GET /healthz -> 503 (from 10.244.0.1:34800)
+2026/09/19 08:33:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:20 GET /healthz -> 503 (from 10.244.0.1:34804)
+2026/09/19 08:33:25 GET /healthz -> 503 (from 10.244.0.1:49278)
+2026/09/19 08:33:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:30 GET /healthz -> 503 (from 10.244.0.1:49290)
+2026/09/19 08:33:35 GET /healthz -> 503 (from 10.244.0.1:54074)
+2026/09/19 08:33:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:40 GET /healthz -> 503 (from 10.244.0.1:54078)
+2026/09/19 08:33:41 GET /healthz -> 503 (from 10.244.0.1:54090)
+2026/09/19 08:33:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:46 GET /healthz -> 503 (from 10.244.0.1:36102)
+2026/09/19 08:33:51 GET /healthz -> 503 (from 10.244.0.1:36118)
+2026/09/19 08:33:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:33:56 GET /healthz -> 503 (from 10.244.0.1:46380)
+2026/09/19 08:34:01 GET /healthz -> 503 (from 10.244.0.1:46382)
+2026/09/19 08:34:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:34:06 GET /healthz -> 503 (from 10.244.0.1:32916)
+2026/09/19 08:34:11 GET /healthz -> 503 (from 10.244.0.1:32922)
+2026/09/19 08:34:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:34:16 GET /healthz -> 503 (from 10.244.0.1:48470)
+2026/09/19 08:34:21 GET /healthz -> 503 (from 10.244.0.1:48480)
+2026/09/19 08:34:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:34:26 GET /healthz -> 503 (from 10.244.0.1:37800)
+2026/09/19 08:34:31 GET /healthz -> 503 (from 10.244.0.1:37806)
+2026/09/19 08:34:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:34:36 GET /healthz -> 503 (from 10.244.0.1:38546)
+2026/09/19 08:34:41 GET /healthz -> 503 (from 10.244.0.1:38560)
+2026/09/19 08:34:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:34:46 GET /healthz -> 503 (from 10.244.0.1:46456)
+2026/09/19 08:34:49 GET /healthz -> 503 (from 10.244.0.1:46462)
+2026/09/19 08:34:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:34:54 GET /healthz -> 503 (from 10.244.0.1:57208)
+2026/09/19 08:34:59 GET /healthz -> 503 (from 10.244.0.1:57216)
+2026/09/19 08:35:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:35:04 GET /healthz -> 503 (from 10.244.0.1:56966)
+2026/09/19 08:35:09 GET /healthz -> 503 (from 10.244.0.1:56972)
+2026/09/19 08:35:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:35:14 GET /healthz -> 503 (from 10.244.0.1:44044)
+2026/09/19 08:35:19 GET /healthz -> 503 (from 10.244.0.1:44046)
+2026/09/19 08:35:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:35:24 GET /healthz -> 503 (from 10.244.0.1:44924)
+2026/09/19 08:35:29 GET /healthz -> 503 (from 10.244.0.1:44936)
+2026/09/19 08:35:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:35:34 GET /healthz -> 503 (from 10.244.0.1:43690)
+2026/09/19 08:35:39 GET /healthz -> 503 (from 10.244.0.1:43694)
+2026/09/19 08:35:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:35:44 GET /healthz -> 503 (from 10.244.0.1:33554)
+2026/09/19 08:35:49 GET /healthz -> 503 (from 10.244.0.1:33560)
+2026/09/19 08:35:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:35:54 GET /healthz -> 503 (from 10.244.0.1:49248)
+2026/09/19 08:35:59 GET /healthz -> 503 (from 10.244.0.1:49254)
+2026/09/19 08:36:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:36:04 GET /healthz -> 503 (from 10.244.0.1:47812)
+2026/09/19 08:36:09 GET /healthz -> 503 (from 10.244.0.1:47820)
+2026/09/19 08:36:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:36:14 GET /healthz -> 503 (from 10.244.0.1:43718)
+2026/09/19 08:36:19 GET /healthz -> 503 (from 10.244.0.1:43728)
+2026/09/19 08:36:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:36:24 GET /healthz -> 503 (from 10.244.0.1:47828)
+2026/09/19 08:36:29 GET /healthz -> 503 (from 10.244.0.1:47834)
+2026/09/19 08:36:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:36:34 GET /healthz -> 503 (from 10.244.0.1:35946)
+2026/09/19 08:36:39 GET /healthz -> 503 (from 10.244.0.1:35960)
+2026/09/19 08:36:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:36:44 GET /healthz -> 503 (from 10.244.0.1:54584)
+2026/09/19 08:36:49 GET /healthz -> 503 (from 10.244.0.1:54594)
+2026/09/19 08:36:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:36:54 GET /healthz -> 503 (from 10.244.0.1:40132)
+2026/09/19 08:36:59 GET /healthz -> 503 (from 10.244.0.1:40146)
+2026/09/19 08:37:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:37:04 GET /healthz -> 503 (from 10.244.0.1:39366)
+2026/09/19 08:37:09 GET /healthz -> 503 (from 10.244.0.1:39376)
+2026/09/19 08:37:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:37:14 GET /healthz -> 503 (from 10.244.0.1:47638)
+2026/09/19 08:37:19 GET /healthz -> 503 (from 10.244.0.1:47648)
+2026/09/19 08:37:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:37:20 GET /healthz -> 503 (from 10.244.0.1:47664)
+2026/09/19 08:37:25 GET /healthz -> 503 (from 10.244.0.1:40716)
+2026/09/19 08:37:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:37:30 GET /healthz -> 503 (from 10.244.0.1:40728)
+2026/09/19 08:37:35 GET /healthz -> 503 (from 10.244.0.1:59356)
+2026/09/19 08:37:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:37:40 GET /healthz -> 503 (from 10.244.0.1:59364)
+2026/09/19 08:37:45 GET /healthz -> 503 (from 10.244.0.1:59734)
+2026/09/19 08:37:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:37:50 GET /healthz -> 503 (from 10.244.0.1:59748)
+2026/09/19 08:37:55 GET /healthz -> 503 (from 10.244.0.1:34052)
+2026/09/19 08:38:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:00 GET /healthz -> 503 (from 10.244.0.1:34060)
+2026/09/19 08:38:05 GET /healthz -> 503 (from 10.244.0.1:57634)
+2026/09/19 08:38:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:10 GET /healthz -> 503 (from 10.244.0.1:57640)
+2026/09/19 08:38:15 GET /healthz -> 503 (from 10.244.0.1:41946)
+2026/09/19 08:38:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:20 GET /healthz -> 503 (from 10.244.0.1:41952)
+2026/09/19 08:38:25 GET /healthz -> 503 (from 10.244.0.1:35166)
+2026/09/19 08:38:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:30 GET /healthz -> 503 (from 10.244.0.1:35180)
+2026/09/19 08:38:32 GET /healthz -> 503 (from 10.244.0.1:35182)
+2026/09/19 08:38:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:37 GET /healthz -> 503 (from 10.244.0.1:46058)
+2026/09/19 08:38:42 GET /healthz -> 503 (from 10.244.0.1:46066)
+2026/09/19 08:38:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:47 GET /healthz -> 503 (from 10.244.0.1:58954)
+2026/09/19 08:38:52 GET /healthz -> 503 (from 10.244.0.1:58968)
+2026/09/19 08:38:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:38:57 GET /healthz -> 503 (from 10.244.0.1:54280)
+2026/09/19 08:39:02 GET /healthz -> 503 (from 10.244.0.1:54294)
+2026/09/19 08:39:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:39:07 GET /healthz -> 503 (from 10.244.0.1:41052)
+2026/09/19 08:39:12 GET /healthz -> 503 (from 10.244.0.1:41058)
+2026/09/19 08:39:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:39:17 GET /healthz -> 503 (from 10.244.0.1:44564)
+2026/09/19 08:39:22 GET /healthz -> 503 (from 10.244.0.1:44568)
+2026/09/19 08:39:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:39:27 GET /healthz -> 503 (from 10.244.0.1:33118)
+2026/09/19 08:39:32 GET /healthz -> 503 (from 10.244.0.1:33132)
+2026/09/19 08:39:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:39:37 GET /healthz -> 503 (from 10.244.0.1:50192)
+2026/09/19 08:39:42 GET /healthz -> 503 (from 10.244.0.1:50198)
+2026/09/19 08:39:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:39:44 GET /healthz -> 503 (from 10.244.0.1:42750)
+2026/09/19 08:39:49 GET /healthz -> 503 (from 10.244.0.1:42756)
+2026/09/19 08:39:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:39:54 GET /healthz -> 503 (from 10.244.0.1:51480)
+2026/09/19 08:39:59 GET /healthz -> 503 (from 10.244.0.1:51494)
+2026/09/19 08:40:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:40:04 GET /healthz -> 503 (from 10.244.0.1:32836)
+2026/09/19 08:40:09 GET /healthz -> 503 (from 10.244.0.1:32844)
+2026/09/19 08:40:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:40:14 GET /healthz -> 503 (from 10.244.0.1:53440)
+2026/09/19 08:40:19 GET /healthz -> 503 (from 10.244.0.1:53456)
+2026/09/19 08:40:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:40:24 GET /healthz -> 503 (from 10.244.0.1:60164)
+2026/09/19 08:40:29 GET /healthz -> 503 (from 10.244.0.1:60174)
+2026/09/19 08:40:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:40:34 GET /healthz -> 503 (from 10.244.0.1:52572)
+2026/09/19 08:40:39 GET /healthz -> 503 (from 10.244.0.1:52586)
+2026/09/19 08:40:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:40:44 GET /healthz -> 503 (from 10.244.0.1:55154)
+2026/09/19 08:40:49 GET /healthz -> 503 (from 10.244.0.1:55166)
+2026/09/19 08:40:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:40:54 GET /healthz -> 503 (from 10.244.0.1:51320)
+2026/09/19 08:40:59 GET /healthz -> 503 (from 10.244.0.1:51334)
+2026/09/19 08:41:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:41:04 GET /healthz -> 503 (from 10.244.0.1:57504)
+2026/09/19 08:41:08 GET /healthz -> 503 (from 10.244.0.1:57510)
+2026/09/19 08:41:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:41:13 GET /healthz -> 503 (from 10.244.0.1:57516)
+2026/09/19 08:41:18 GET /healthz -> 503 (from 10.244.0.1:50120)
+2026/09/19 08:41:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:41:23 GET /healthz -> 503 (from 10.244.0.1:50126)
+2026/09/19 08:41:28 GET /healthz -> 503 (from 10.244.0.1:34282)
+2026/09/19 08:41:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:41:33 GET /healthz -> 503 (from 10.244.0.1:34284)
+2026/09/19 08:41:38 GET /healthz -> 503 (from 10.244.0.1:49520)
+2026/09/19 08:41:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:41:43 GET /healthz -> 503 (from 10.244.0.1:49534)
+2026/09/19 08:41:48 GET /healthz -> 503 (from 10.244.0.1:54918)
+2026/09/19 08:41:53 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:41:53 GET /healthz -> 503 (from 10.244.0.1:54928)
+2026/09/19 08:41:58 GET /healthz -> 503 (from 10.244.0.1:41694)
+2026/09/19 08:42:03 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:42:03 GET /healthz -> 503 (from 10.244.0.1:41706)
+2026/09/19 08:42:08 GET /healthz -> 503 (from 10.244.0.1:48086)
+2026/09/19 08:42:13 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:42:13 GET /healthz -> 503 (from 10.244.0.1:48088)
+2026/09/19 08:42:18 GET /healthz -> 503 (from 10.244.0.1:40148)
+2026/09/19 08:42:23 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:42:23 GET /healthz -> 503 (from 10.244.0.1:40152)
+2026/09/19 08:42:28 GET /healthz -> 503 (from 10.244.0.1:47318)
+2026/09/19 08:42:33 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:42:33 GET /healthz -> 503 (from 10.244.0.1:47330)
+2026/09/19 08:42:38 GET /healthz -> 503 (from 10.244.0.1:58536)
+2026/09/19 08:42:43 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:42:43 GET /healthz -> 503 (from 10.244.0.1:58548)
+2026/09/19 08:42:48 GET /healthz -> 503 (from 10.244.0.1:55066)
+2026/09/19 08:56:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:56:55 GET /healthz -> 503 (from 10.244.0.1:55074)
+2026/09/19 08:57:00 GET /healthz -> 503 (from 10.244.0.1:35962)
+2026/09/19 08:57:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:57:05 GET /healthz -> 503 (from 10.244.0.1:35964)
+2026/09/19 08:57:10 GET /healthz -> 503 (from 10.244.0.1:46532)
+2026/09/19 08:57:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:57:15 GET /healthz -> 503 (from 10.244.0.1:46544)
+2026/09/19 08:57:20 GET /healthz -> 503 (from 10.244.0.1:33530)
+2026/09/19 08:57:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:57:25 GET /healthz -> 503 (from 10.244.0.1:33546)
+2026/09/19 08:57:30 GET /healthz -> 503 (from 10.244.0.1:43002)
+2026/09/19 08:57:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:57:35 GET /healthz -> 503 (from 10.244.0.1:43014)
+2026/09/19 08:57:40 GET /healthz -> 503 (from 10.244.0.1:36448)
+2026/09/19 08:57:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:57:44 GET /healthz -> 503 (from 10.244.0.1:36452)
+2026/09/19 08:57:49 GET /healthz -> 503 (from 10.244.0.1:44924)
+2026/09/19 08:57:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:57:54 GET /healthz -> 503 (from 10.244.0.1:44926)
+2026/09/19 08:57:59 GET /healthz -> 503 (from 10.244.0.1:43500)
+2026/09/19 08:58:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:58:04 GET /healthz -> 503 (from 10.244.0.1:43506)
+2026/09/19 08:58:09 GET /healthz -> 503 (from 10.244.0.1:59292)
+2026/09/19 08:58:14 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:58:14 GET /healthz -> 503 (from 10.244.0.1:59302)
+2026/09/19 08:58:19 GET /healthz -> 503 (from 10.244.0.1:49546)
+2026/09/19 08:58:24 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:58:24 GET /healthz -> 503 (from 10.244.0.1:49558)
+2026/09/19 08:58:29 GET /healthz -> 503 (from 10.244.0.1:41126)
+2026/09/19 08:58:34 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:58:34 GET /healthz -> 503 (from 10.244.0.1:41140)
+2026/09/19 08:58:39 GET /healthz -> 503 (from 10.244.0.1:39464)
+2026/09/19 08:58:44 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:58:44 GET /healthz -> 503 (from 10.244.0.1:39466)
+2026/09/19 08:58:49 GET /healthz -> 503 (from 10.244.0.1:54848)
+2026/09/19 08:58:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:58:54 GET /healthz -> 503 (from 10.244.0.1:54850)
+2026/09/19 08:58:59 GET /healthz -> 503 (from 10.244.0.1:43198)
+2026/09/19 08:59:04 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:59:04 GET /healthz -> 503 (from 10.244.0.1:43210)
+2026/09/19 08:59:09 GET /healthz -> 503 (from 10.244.0.1:52134)
+2026/09/19 08:59:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:59:11 GET /healthz -> 503 (from 10.244.0.1:52142)
+2026/09/19 08:59:16 GET /healthz -> 503 (from 10.244.0.1:60638)
+2026/09/19 08:59:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:59:21 GET /healthz -> 503 (from 10.244.0.1:60648)
+2026/09/19 08:59:26 GET /healthz -> 503 (from 10.244.0.1:40486)
+2026/09/19 08:59:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:59:31 GET /healthz -> 503 (from 10.244.0.1:40496)
+2026/09/19 08:59:36 GET /healthz -> 503 (from 10.244.0.1:45178)
+2026/09/19 08:59:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:59:41 GET /healthz -> 503 (from 10.244.0.1:45182)
+2026/09/19 08:59:46 GET /healthz -> 503 (from 10.244.0.1:56218)
+2026/09/19 08:59:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 08:59:51 GET /healthz -> 503 (from 10.244.0.1:56234)
+2026/09/19 08:59:56 GET /healthz -> 503 (from 10.244.0.1:56942)
+2026/09/19 09:00:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:00:01 GET /healthz -> 503 (from 10.244.0.1:56954)
+2026/09/19 09:00:06 GET /healthz -> 503 (from 10.244.0.1:37026)
+2026/09/19 09:00:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:00:11 GET /healthz -> 503 (from 10.244.0.1:37038)
+2026/09/19 09:00:16 GET /healthz -> 503 (from 10.244.0.1:36498)
+2026/09/19 09:00:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:00:21 GET /healthz -> 503 (from 10.244.0.1:36500)
+2026/09/19 09:00:26 GET /healthz -> 503 (from 10.244.0.1:37822)
+2026/09/19 09:00:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:00:31 GET /healthz -> 503 (from 10.244.0.1:37826)
+2026/09/19 09:00:36 GET /healthz -> 503 (from 10.244.0.1:44730)
+2026/09/19 09:00:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:00:41 GET /healthz -> 503 (from 10.244.0.1:44742)
+2026/09/19 09:00:46 GET /healthz -> 503 (from 10.244.0.1:39618)
+2026/09/19 09:00:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:00:51 GET /healthz -> 503 (from 10.244.0.1:39620)
+2026/09/19 09:00:56 GET /healthz -> 503 (from 10.244.0.1:45520)
+2026/09/19 09:01:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:01:01 GET /healthz -> 503 (from 10.244.0.1:45526)
+2026/09/19 09:01:06 GET /healthz -> 503 (from 10.244.0.1:35606)
+2026/09/19 09:01:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:01:11 GET /healthz -> 503 (from 10.244.0.1:35610)
+2026/09/19 09:01:16 GET /healthz -> 503 (from 10.244.0.1:46264)
+2026/09/19 09:01:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:01:21 GET /healthz -> 503 (from 10.244.0.1:46266)
+2026/09/19 09:01:26 GET /healthz -> 503 (from 10.244.0.1:47598)
+2026/09/19 09:01:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:01:31 GET /healthz -> 503 (from 10.244.0.1:47612)
+2026/09/19 09:01:36 GET /healthz -> 503 (from 10.244.0.1:49568)
+2026/09/19 09:01:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:01:41 GET /healthz -> 503 (from 10.244.0.1:49570)
+2026/09/19 09:01:46 GET /healthz -> 503 (from 10.244.0.1:51608)
+2026/09/19 09:01:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:01:51 GET /healthz -> 503 (from 10.244.0.1:51616)
+2026/09/19 09:01:56 GET /healthz -> 503 (from 10.244.0.1:41722)
+2026/09/19 09:02:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:02:01 GET /healthz -> 503 (from 10.244.0.1:41732)
+2026/09/19 09:02:06 GET /healthz -> 503 (from 10.244.0.1:43416)
+2026/09/19 09:02:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:02:11 GET /healthz -> 503 (from 10.244.0.1:43426)
+2026/09/19 09:02:16 GET /healthz -> 503 (from 10.244.0.1:41702)
+2026/09/19 09:02:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:02:21 GET /healthz -> 503 (from 10.244.0.1:41716)
+2026/09/19 09:02:26 GET /healthz -> 503 (from 10.244.0.1:58622)
+2026/09/19 09:02:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:02:31 GET /healthz -> 503 (from 10.244.0.1:58624)
+2026/09/19 09:02:36 GET /healthz -> 503 (from 10.244.0.1:59368)
+2026/09/19 09:02:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:02:41 GET /healthz -> 503 (from 10.244.0.1:59374)
+2026/09/19 09:02:46 GET /healthz -> 503 (from 10.244.0.1:47210)
+2026/09/19 09:02:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:02:51 GET /healthz -> 503 (from 10.244.0.1:47214)
+2026/09/19 09:02:56 GET /healthz -> 503 (from 10.244.0.1:50484)
+2026/09/19 09:03:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:03:01 GET /healthz -> 503 (from 10.244.0.1:50498)
+2026/09/19 09:03:06 GET /healthz -> 503 (from 10.244.0.1:37770)
+2026/09/19 09:03:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:03:11 GET /healthz -> 503 (from 10.244.0.1:37782)
+2026/09/19 09:03:16 GET /healthz -> 503 (from 10.244.0.1:45650)
+2026/09/19 09:03:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:03:21 GET /healthz -> 503 (from 10.244.0.1:45656)
+2026/09/19 09:03:26 GET /healthz -> 503 (from 10.244.0.1:49428)
+2026/09/19 09:03:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:03:31 GET /healthz -> 503 (from 10.244.0.1:49438)
+2026/09/19 09:03:36 GET /healthz -> 503 (from 10.244.0.1:44246)
+2026/09/19 09:03:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:03:41 GET /healthz -> 503 (from 10.244.0.1:44260)
+2026/09/19 09:03:46 GET /healthz -> 503 (from 10.244.0.1:38402)
+2026/09/19 09:03:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:03:51 GET /healthz -> 503 (from 10.244.0.1:38412)
+2026/09/19 09:03:56 GET /healthz -> 503 (from 10.244.0.1:45326)
+2026/09/19 09:04:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:01 GET /healthz -> 503 (from 10.244.0.1:45330)
+2026/09/19 09:04:06 GET /healthz -> 503 (from 10.244.0.1:49286)
+2026/09/19 09:04:09 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:09 GET /healthz -> 503 (from 10.244.0.1:49296)
+2026/09/19 09:04:14 GET /healthz -> 503 (from 10.244.0.1:49300)
+2026/09/19 09:04:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:19 GET /healthz -> 503 (from 10.244.0.1:40144)
+2026/09/19 09:04:24 GET /healthz -> 503 (from 10.244.0.1:40146)
+2026/09/19 09:04:29 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:29 GET /healthz -> 503 (from 10.244.0.1:38970)
+2026/09/19 09:04:34 GET /healthz -> 503 (from 10.244.0.1:38976)
+2026/09/19 09:04:39 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:39 GET /healthz -> 503 (from 10.244.0.1:55908)
+2026/09/19 09:04:44 GET /healthz -> 503 (from 10.244.0.1:55922)
+2026/09/19 09:04:49 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:49 GET /healthz -> 503 (from 10.244.0.1:39394)
+2026/09/19 09:04:54 GET /healthz -> 503 (from 10.244.0.1:39406)
+2026/09/19 09:04:59 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:04:59 GET /healthz -> 503 (from 10.244.0.1:51468)
+2026/09/19 09:05:04 GET /healthz -> 503 (from 10.244.0.1:51470)
+2026/09/19 09:05:09 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:05:09 GET /healthz -> 503 (from 10.244.0.1:60416)
+2026/09/19 09:05:14 GET /healthz -> 503 (from 10.244.0.1:60430)
+2026/09/19 09:05:19 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:05:19 GET /healthz -> 503 (from 10.244.0.1:56450)
+2026/09/19 09:05:23 GET /healthz -> 503 (from 10.244.0.1:56452)
+2026/09/19 09:05:28 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:05:28 GET /healthz -> 503 (from 10.244.0.1:34760)
+2026/09/19 09:05:33 GET /healthz -> 503 (from 10.244.0.1:34770)
+2026/09/19 09:05:38 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:05:38 GET /healthz -> 503 (from 10.244.0.1:55752)
+2026/09/19 09:05:43 GET /healthz -> 503 (from 10.244.0.1:55768)
+2026/09/19 09:05:48 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:05:48 GET /healthz -> 503 (from 10.244.0.1:50164)
+2026/09/19 09:05:53 GET /healthz -> 503 (from 10.244.0.1:50168)
+2026/09/19 09:05:58 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:05:58 GET /healthz -> 503 (from 10.244.0.1:45132)
+2026/09/19 09:06:03 GET /healthz -> 503 (from 10.244.0.1:45138)
+2026/09/19 09:06:08 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:06:08 GET /healthz -> 503 (from 10.244.0.1:46644)
+2026/09/19 09:06:13 GET /healthz -> 503 (from 10.244.0.1:46658)
+2026/09/19 09:06:18 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:06:18 GET /healthz -> 503 (from 10.244.0.1:56090)
+2026/09/19 09:06:23 GET /healthz -> 503 (from 10.244.0.1:56102)
+2026/09/19 09:06:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:06:27 GET /healthz -> 503 (from 10.244.0.1:54202)
+2026/09/19 09:06:32 GET /healthz -> 503 (from 10.244.0.1:54208)
+2026/09/19 09:06:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:06:37 GET /healthz -> 503 (from 10.244.0.1:45898)
+2026/09/19 09:06:42 GET /healthz -> 503 (from 10.244.0.1:45904)
+2026/09/19 09:06:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:06:47 GET /healthz -> 503 (from 10.244.0.1:48894)
+2026/09/19 09:06:52 GET /healthz -> 503 (from 10.244.0.1:48908)
+2026/09/19 09:06:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:06:57 GET /healthz -> 503 (from 10.244.0.1:54218)
+2026/09/19 09:07:02 GET /healthz -> 503 (from 10.244.0.1:54234)
+2026/09/19 09:07:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:07:07 GET /healthz -> 503 (from 10.244.0.1:33744)
+2026/09/19 09:07:12 GET /healthz -> 503 (from 10.244.0.1:33752)
+2026/09/19 09:07:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:07:17 GET /healthz -> 503 (from 10.244.0.1:36260)
+2026/09/19 09:07:22 GET /healthz -> 503 (from 10.244.0.1:36276)
+2026/09/19 09:07:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:07:27 GET /healthz -> 503 (from 10.244.0.1:56012)
+2026/09/19 09:07:30 GET /healthz -> 503 (from 10.244.0.1:56018)
+2026/09/19 09:07:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:07:35 GET /healthz -> 503 (from 10.244.0.1:56024)
+2026/09/19 09:07:40 GET /healthz -> 503 (from 10.244.0.1:42114)
+2026/09/19 09:07:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:07:45 GET /healthz -> 503 (from 10.244.0.1:42130)
+2026/09/19 09:07:50 GET /healthz -> 503 (from 10.244.0.1:53222)
+2026/09/19 09:07:55 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:07:55 GET /healthz -> 503 (from 10.244.0.1:53226)
+2026/09/19 09:08:00 GET /healthz -> 503 (from 10.244.0.1:46456)
+2026/09/19 09:08:05 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:08:05 GET /healthz -> 503 (from 10.244.0.1:46458)
+2026/09/19 09:08:10 GET /healthz -> 503 (from 10.244.0.1:36386)
+2026/09/19 09:08:15 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:08:15 GET /healthz -> 503 (from 10.244.0.1:36388)
+2026/09/19 09:08:20 GET /healthz -> 503 (from 10.244.0.1:56210)
+2026/09/19 09:08:25 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:08:25 GET /healthz -> 503 (from 10.244.0.1:56212)
+2026/09/19 09:08:30 GET /healthz -> 503 (from 10.244.0.1:35530)
+2026/09/19 09:08:35 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:08:35 GET /healthz -> 503 (from 10.244.0.1:35536)
+2026/09/19 09:08:40 GET /healthz -> 503 (from 10.244.0.1:49132)
+2026/09/19 09:08:45 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:08:45 GET /healthz -> 503 (from 10.244.0.1:49146)
+2026/09/19 09:08:50 GET /healthz -> 503 (from 10.244.0.1:60784)
+2026/09/19 09:08:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:08:51 GET /healthz -> 503 (from 10.244.0.1:60794)
+2026/09/19 09:08:56 GET /healthz -> 503 (from 10.244.0.1:47742)
+2026/09/19 09:09:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:09:01 GET /healthz -> 503 (from 10.244.0.1:47744)
+2026/09/19 09:09:06 GET /healthz -> 503 (from 10.244.0.1:46382)
+2026/09/19 09:09:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:09:11 GET /healthz -> 503 (from 10.244.0.1:46390)
+2026/09/19 09:09:16 GET /healthz -> 503 (from 10.244.0.1:33474)
+2026/09/19 09:09:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:09:21 GET /healthz -> 503 (from 10.244.0.1:33484)
+2026/09/19 09:09:26 GET /healthz -> 503 (from 10.244.0.1:50100)
+2026/09/19 09:09:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:09:31 GET /healthz -> 503 (from 10.244.0.1:50106)
+2026/09/19 09:09:36 GET /healthz -> 503 (from 10.244.0.1:34224)
+2026/09/19 09:09:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:09:41 GET /healthz -> 503 (from 10.244.0.1:34236)
+2026/09/19 09:09:46 GET /healthz -> 503 (from 10.244.0.1:37820)
+2026/09/19 09:09:51 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:09:51 GET /healthz -> 503 (from 10.244.0.1:37824)
+2026/09/19 09:09:55 GET /healthz -> 503 (from 10.244.0.1:37840)
+2026/09/19 09:10:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:10:00 GET /healthz -> 503 (from 10.244.0.1:47716)
+2026/09/19 09:10:05 GET /healthz -> 503 (from 10.244.0.1:47722)
+2026/09/19 09:10:10 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:10:10 GET /healthz -> 503 (from 10.244.0.1:52560)
+2026/09/19 09:10:15 GET /healthz -> 503 (from 10.244.0.1:52562)
+2026/09/19 09:10:20 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:10:20 GET /healthz -> 503 (from 10.244.0.1:53052)
+2026/09/19 09:10:25 GET /healthz -> 503 (from 10.244.0.1:53066)
+2026/09/19 09:10:30 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:10:30 GET /healthz -> 503 (from 10.244.0.1:42616)
+2026/09/19 09:10:35 GET /healthz -> 503 (from 10.244.0.1:42626)
+2026/09/19 09:10:40 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:10:40 GET /healthz -> 503 (from 10.244.0.1:54182)
+2026/09/19 09:10:45 GET /healthz -> 503 (from 10.244.0.1:54194)
+2026/09/19 09:10:50 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:10:50 GET /healthz -> 503 (from 10.244.0.1:58926)
+2026/09/19 09:10:55 GET /healthz -> 503 (from 10.244.0.1:58932)
+2026/09/19 09:11:00 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:00 GET /healthz -> 503 (from 10.244.0.1:36902)
+2026/09/19 09:11:02 GET /healthz -> 503 (from 10.244.0.1:36918)
+2026/09/19 09:11:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:07 GET /healthz -> 503 (from 10.244.0.1:59560)
+2026/09/19 09:11:12 GET /healthz -> 503 (from 10.244.0.1:59574)
+2026/09/19 09:11:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:17 GET /healthz -> 503 (from 10.244.0.1:38476)
+2026/09/19 09:11:22 GET /healthz -> 503 (from 10.244.0.1:38482)
+2026/09/19 09:11:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:27 GET /healthz -> 503 (from 10.244.0.1:47196)
+2026/09/19 09:11:32 GET /healthz -> 503 (from 10.244.0.1:47208)
+2026/09/19 09:11:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:37 GET /healthz -> 503 (from 10.244.0.1:58876)
+2026/09/19 09:11:42 GET /healthz -> 503 (from 10.244.0.1:58890)
+2026/09/19 09:11:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:47 GET /healthz -> 503 (from 10.244.0.1:59226)
+2026/09/19 09:11:52 GET /healthz -> 503 (from 10.244.0.1:59234)
+2026/09/19 09:11:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:11:57 GET /healthz -> 503 (from 10.244.0.1:48518)
+2026/09/19 09:12:02 GET /healthz -> 503 (from 10.244.0.1:48528)
+2026/09/19 09:12:07 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:12:07 GET /healthz -> 503 (from 10.244.0.1:59664)
+2026/09/19 09:12:12 GET /healthz -> 503 (from 10.244.0.1:59668)
+2026/09/19 09:12:17 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:12:17 GET /healthz -> 503 (from 10.244.0.1:38794)
+2026/09/19 09:12:22 GET /healthz -> 503 (from 10.244.0.1:38808)
+2026/09/19 09:12:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:12:27 GET /healthz -> 503 (from 10.244.0.1:37528)
+2026/09/19 09:12:31 GET /healthz -> 503 (from 10.244.0.1:37542)
+2026/09/19 09:12:36 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:12:36 GET /healthz -> 503 (from 10.244.0.1:37836)
+2026/09/19 09:12:41 GET /healthz -> 503 (from 10.244.0.1:37852)
+2026/09/19 09:12:46 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:12:46 GET /healthz -> 503 (from 10.244.0.1:42686)
+2026/09/19 09:12:51 GET /healthz -> 503 (from 10.244.0.1:42698)
+2026/09/19 09:12:56 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:12:56 GET /healthz -> 503 (from 10.244.0.1:49474)
+2026/09/19 09:13:01 GET /healthz -> 503 (from 10.244.0.1:49476)
+2026/09/19 09:13:06 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:13:06 GET /healthz -> 503 (from 10.244.0.1:42834)
+2026/09/19 09:13:11 GET /healthz -> 503 (from 10.244.0.1:42850)
+2026/09/19 09:13:16 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:13:16 GET /healthz -> 503 (from 10.244.0.1:45490)
+2026/09/19 09:13:21 GET /healthz -> 503 (from 10.244.0.1:45502)
+2026/09/19 09:13:26 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:13:26 GET /healthz -> 503 (from 10.244.0.1:52756)
+2026/09/19 09:13:31 GET /healthz -> 503 (from 10.244.0.1:52758)
+2026/09/19 09:13:32 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:13:32 GET /healthz -> 503 (from 10.244.0.1:52772)
+2026/09/19 09:13:37 GET /healthz -> 503 (from 10.244.0.1:43822)
+2026/09/19 09:13:42 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:13:42 GET /healthz -> 503 (from 10.244.0.1:43832)
+2026/09/19 09:13:47 GET /healthz -> 503 (from 10.244.0.1:51394)
+2026/09/19 09:18:54 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:18:54 GET /healthz -> 503 (from 10.244.0.1:51400)
+2026/09/19 09:30:22 GET /healthz -> 503 (from 10.244.0.1:39954)
+2026/09/19 09:30:27 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:30:27 GET /healthz -> 503 (from 10.244.0.1:39956)
+2026/09/19 09:30:32 GET /healthz -> 503 (from 10.244.0.1:36008)
+2026/09/19 09:30:37 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:30:37 GET /healthz -> 503 (from 10.244.0.1:36014)
+2026/09/19 09:30:42 GET /healthz -> 503 (from 10.244.0.1:44676)
+2026/09/19 09:30:47 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:30:47 GET /healthz -> 503 (from 10.244.0.1:44690)
+2026/09/19 09:30:52 GET /healthz -> 503 (from 10.244.0.1:37062)
+2026/09/19 09:30:57 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:30:57 GET /healthz -> 503 (from 10.244.0.1:37074)
+2026/09/19 09:31:02 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:31:02 GET /healthz -> 503 (from 10.244.0.1:53994)
+2026/09/19 09:31:07 GET /healthz -> 503 (from 10.244.0.1:54006)
+2026/09/19 09:31:12 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:31:12 GET /healthz -> 503 (from 10.244.0.1:42656)
+2026/09/19 09:31:16 GET /healthz -> 503 (from 10.244.0.1:42664)
+2026/09/19 09:31:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:31:21 GET /healthz -> 503 (from 10.244.0.1:52268)
+2026/09/19 09:31:26 GET /healthz -> 503 (from 10.244.0.1:52272)
+2026/09/19 09:31:31 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:31:31 GET /healthz -> 503 (from 10.244.0.1:40338)
+2026/09/19 09:31:36 GET /healthz -> 503 (from 10.244.0.1:40346)
+2026/09/19 09:31:41 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:31:41 GET /healthz -> 503 (from 10.244.0.1:57354)
+2026/09/19 09:31:46 GET /healthz -> 503 (from 10.244.0.1:57356)
+2026/09/19 09:31:52 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:31:52 GET /healthz -> 503 (from 10.244.0.1:54278)
+2026/09/19 09:31:56 GET /healthz -> 503 (from 10.244.0.1:54288)
+2026/09/19 09:32:01 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:32:01 GET /healthz -> 503 (from 10.244.0.1:53736)
+2026/09/19 09:32:06 GET /healthz -> 503 (from 10.244.0.1:53748)
+2026/09/19 09:32:11 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:32:11 GET /healthz -> 503 (from 10.244.0.1:44564)
+2026/09/19 09:32:16 GET /healthz -> 503 (from 10.244.0.1:44566)
+2026/09/19 09:32:21 pod list failed: parse pod list: unexpected end of JSON input
+2026/09/19 09:32:21 GET /healthz -> 503 (from 10.244.0.1
